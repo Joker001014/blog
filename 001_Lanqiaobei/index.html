@@ -284,7 +284,7 @@ u8 <span class="token function">Read_key</span><span class="token punctuation">(
 	<span class="token keyword">else</span>
 		keypress <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>     <span class="token comment">//按键抖动</span>
 	
-	<span class="token keyword">if</span><span class="token punctuation">(</span>keypress  <span class="token number">3</span><span class="token punctuation">)</span>   <span class="token comment">//多次检测，避免误判</span>
+	<span class="token keyword">if</span><span class="token punctuation">(</span>keypress <span class="token operator">==</span> <span class="token number">3</span><span class="token punctuation">)</span>   <span class="token comment">//多次检测，避免误判</span>
 	<span class="token punctuation">{</span>
 		keypress <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>     <span class="token comment">//清空按键计数</span>
 		keyread <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>      <span class="token comment">//读取按键标志位</span>
@@ -316,7 +316,7 @@ u8 <span class="token function">Read_key</span><span class="token punctuation">(
 	P3 <span class="token operator">=</span> <span class="token number">0x0f</span><span class="token punctuation">;</span>P42 <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>P44 <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
 	key_m <span class="token operator">=</span> P3<span class="token operator">&amp;</span><span class="token number">0x0f</span><span class="token punctuation">;</span>
 	
-	<span class="token keyword">if</span><span class="token punctuation">(</span><span class="token punctuation">(</span>keyread<span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> <span class="token punctuation">(</span>key_m  <span class="token number">0x0f</span><span class="token punctuation">)</span><span class="token punctuation">)</span>  <span class="token comment">//松手检测</span>
+	<span class="token keyword">if</span><span class="token punctuation">(</span><span class="token punctuation">(</span>keyread<span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> <span class="token punctuation">(</span>key_m <span class="token operator">==</span> <span class="token number">0x0f</span><span class="token punctuation">)</span><span class="token punctuation">)</span>  <span class="token comment">//松手检测</span>
 	<span class="token punctuation">{</span>
 		keyread <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>                    <span class="token comment">//清空读取标志位</span>
 		<span class="token keyword">return</span> keyvalue<span class="token punctuation">;</span>                <span class="token comment">//返回读到的按键</span>
