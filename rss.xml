@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[JokerDebug Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 02 Mar 2025 12:01:15 GMT</lastBuildDate><item><title><![CDATA[蓝桥杯单片机设计与开发_基础模块_超声波测距]]></title><description><![CDATA[Github代码仓库链接 一、前言 承接上文，本文将介绍最后一个蓝桥杯模块（超声波测距），为大家做出详细编程指导。 二、超声波测距 超声波指的是频率超过人类可听范围（2…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/009 Lanqiaobei/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/009 Lanqiaobei/</guid><pubDate>Wed, 02 Jun 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;https://github.com/Joker001014/LanQiaoCup&quot;&gt;Github代码仓库链接&lt;/a&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[JokerDebug Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 02 Mar 2025 12:04:33 GMT</lastBuildDate><item><title><![CDATA[蓝桥杯单片机设计与开发_基础模块_超声波测距]]></title><description><![CDATA[Github代码仓库链接 一、前言 承接上文，本文将介绍最后一个蓝桥杯模块（超声波测距），为大家做出详细编程指导。 二、超声波测距 超声波指的是频率超过人类可听范围（2…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/009 Lanqiaobei/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/009 Lanqiaobei/</guid><pubDate>Wed, 02 Jun 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;https://github.com/Joker001014/LanQiaoCup&quot;&gt;Github代码仓库链接&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;一、前言&lt;/h2&gt;
 &lt;p&gt;承接上文，本文将介绍最后一个蓝桥杯模块（超声波测距），为大家做出详细编程指导。&lt;/p&gt;
 &lt;h2&gt;二、超声波测距&lt;/h2&gt;
@@ -3113,10 +3113,74 @@ u8 &lt;span class=&quot;token function&quot;&gt;Read_key&lt;/span&gt;&lt;span cl
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;c&quot;&gt;&lt;pre class=&quot;language-c&quot;&gt;&lt;code class=&quot;language-c&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;door&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0x80&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0x00&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;  &lt;span class=&quot;token comment&quot;&gt;//按下按键4，点亮所有LED&lt;/span&gt;
 &lt;span class=&quot;token keyword&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;door&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0xa0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0xff&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;  &lt;span class=&quot;token comment&quot;&gt;//按下按键5，打开蜂鸣器、继电器&lt;/span&gt;
 &lt;span class=&quot;token keyword&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt;dspbuf&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;    &lt;span class=&quot;token comment&quot;&gt;//按下按键6,第一位数码管显示数字1&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;到此，蓝桥杯单片机设计与开发_标准模板兼新手入门STC89C52系列单片机基础模板讲解到此结束啦！&lt;/p&gt;
 &lt;p&gt;附录：证书
-&lt;img src=&quot;./0.JPG&quot; alt=&quot;证书1&quot;&gt;
-&lt;img src=&quot;./00.JPG&quot; alt=&quot;证书2&quot;&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[New Beginnings]]></title><description><![CDATA[Far far away, behind the word mountains, far from the countries Vokalia and
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blog/static/5d83805f5f6c453bf1bd05e51325f28f/91606/0.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 141.13924050632912%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAcABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAIBBf/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/9oADAMBAAIQAxAAAAHsbNkCwnZaB//EABgQAQADAQAAAAAAAAAAAAAAAAEAIUER/9oACAEBAAEFAgoCbh2b2hvZcJ//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAEDAQE/AR//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAECAQE/AR//xAAcEAABAwUAAAAAAAAAAAAAAAAAEDFBAREggZH/2gAIAQEABj8CuT1NkFcHHT//xAAcEAEAAwACAwAAAAAAAAAAAAABABEhMUFhkaH/2gAIAQEAAT8hBSt17iKyHCCU5tLXEsMfSP2gVHdsAixTNFBBcPLDzbP/2gAMAwEAAgADAAAAEKvczv/EABURAQEAAAAAAAAAAAAAAAAAAAEQ/9oACAEDAQE/EIIT/8QAFREBAQAAAAAAAAAAAAAAAAAAARD/2gAIAQIBAT8QYk//xAAgEAEAAgICAQUAAAAAAAAAAAABABEhUTFBYXGxwdHh/9oACAEBAAE/ELPIxCO4sAc9/qItGhxl0SnBQWtrMxiapG1qXT2IzbpU15gNbwVk71Kq38E5xhgDfpEgVWtH1LRIq840T//Z&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;证书1&quot;
+        title=&quot;&quot;
+        src=&quot;/blog/static/5d83805f5f6c453bf1bd05e51325f28f/828fb/0.jpg&quot;
+        srcset=&quot;/blog/static/5d83805f5f6c453bf1bd05e51325f28f/ff44c/0.jpg 158w,
+/blog/static/5d83805f5f6c453bf1bd05e51325f28f/a6688/0.jpg 315w,
+/blog/static/5d83805f5f6c453bf1bd05e51325f28f/828fb/0.jpg 630w,
+/blog/static/5d83805f5f6c453bf1bd05e51325f28f/0ede0/0.jpg 945w,
+/blog/static/5d83805f5f6c453bf1bd05e51325f28f/3ac88/0.jpg 1260w,
+/blog/static/5d83805f5f6c453bf1bd05e51325f28f/91606/0.jpg 1736w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blog/static/67f21b3f03d6d24bc5d3bf8f695be272/effa3/00.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 143.03797468354432%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAdABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAIBBf/EABYBAQEBAAAAAAAAAAAAAAAAAAABAv/aAAwDAQACEAMQAAAB7GzZITNk1bCf/8QAGhAAAgMBAQAAAAAAAAAAAAAAAAERIUEQIv/aAAgBAQABBQJKoXMRs+U720WI/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAwEBPwEf/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAgEBPwEf/8QAGxAAAQQDAAAAAAAAAAAAAAAAABARIUEBIJH/2gAIAQEABj8CeS1hjOtcT//EAB0QAQACAQUBAAAAAAAAAAAAAAEAETEhQVFhocH/2gAIAQEAAT8hsuctmGh9zCg+wsBystnxjcgNN7YBltNFPcDQEzxOzAZuf//aAAwDAQACAAMAAAAQazkC/8QAFREBAQAAAAAAAAAAAAAAAAAAARD/2gAIAQMBAT8Qgk//xAAVEQEBAAAAAAAAAAAAAAAAAAABEP/aAAgBAgEBPxBiT//EAB4QAQACAwACAwAAAAAAAAAAAAEAESFBYTFRccHw/9oACAEBAAE/ECZFthPccijnamXih3wQPFACNJ5YWUbFkPIq7N8I6Tjo7CtjGVFRpW/oSwobec8vzC4KPzsRFS10cn//2Q==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;证书2&quot;
+        title=&quot;&quot;
+        src=&quot;/blog/static/67f21b3f03d6d24bc5d3bf8f695be272/828fb/00.jpg&quot;
+        srcset=&quot;/blog/static/67f21b3f03d6d24bc5d3bf8f695be272/ff44c/00.jpg 158w,
+/blog/static/67f21b3f03d6d24bc5d3bf8f695be272/a6688/00.jpg 315w,
+/blog/static/67f21b3f03d6d24bc5d3bf8f695be272/828fb/00.jpg 630w,
+/blog/static/67f21b3f03d6d24bc5d3bf8f695be272/0ede0/00.jpg 945w,
+/blog/static/67f21b3f03d6d24bc5d3bf8f695be272/3ac88/00.jpg 1260w,
+/blog/static/67f21b3f03d6d24bc5d3bf8f695be272/effa3/00.jpg 1752w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;到此，蓝桥杯单片机设计与开发_标准模板兼新手入门STC89C52系列单片机基础模板讲解到此结束啦！&lt;/p&gt;</content:encoded></item><item><title><![CDATA[New Beginnings]]></title><description><![CDATA[Far far away, behind the word mountains, far from the countries Vokalia and
 Consonantia, there live the blind texts. Separated they live in…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/new-beginnings/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/new-beginnings/</guid><pubDate>Thu, 28 May 2015 22:40:32 GMT</pubDate><content:encoded>&lt;p&gt;Far far away, behind the word mountains, far from the countries Vokalia and
 Consonantia, there live the blind texts. Separated they live in Bookmarksgrove
 right at the coast of the Semantics, a large language ocean. A small river named
