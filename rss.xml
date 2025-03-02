@@ -1,17 +1,88 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[JokerDebug Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 02 Mar 2025 10:49:14 GMT</lastBuildDate><item><title><![CDATA[蓝桥杯单片机设计与开发_基础模块_DS18B20]]></title><description><![CDATA[一、前言 从今天开始，笔者将向大家逐一讲解蓝桥杯的大部分竞赛模块，笔者将基于上一篇文章（[蓝桥杯单片机设计与开发_标准模板](https://joker001014.github.io/blog/001 Lanqiaobei)）中讲解的标准模板编写程序。按照顺序（DS18B2…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/002_Lanqiaobei/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/002_Lanqiaobei/</guid><pubDate>Wed, 12 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;一、前言&lt;/h2&gt;
-&lt;p&gt;从今天开始，笔者将向大家逐一讲解蓝桥杯的大部分竞赛模块，笔者将基于上一篇文章（[蓝桥杯单片机设计与开发_标准模板](&lt;a href=&quot;https://joker001014.github.io/blog/001&quot;&gt;https://joker001014.github.io/blog/001&lt;/a&gt; Lanqiaobei)）中讲解的标准模板编写程序。按照顺序（DS18B20、DS1302、PCF8591、AT24C02、PWM、串口通信、NE555以及超声波测距），为大家做出详细编程指导。&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[JokerDebug Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 02 Mar 2025 10:59:24 GMT</lastBuildDate><item><title><![CDATA[蓝桥杯单片机设计与开发_基础模块_DS18B20]]></title><description><![CDATA[Github代码仓库链接 一、前言 从今天开始，笔者将向大家逐一讲解蓝桥杯的大部分竞赛模块，笔者将基于上一篇文章（蓝桥杯单片机设计与开发_标准模板）中讲解的标准模板编写程序。按照顺序（DS18B20、DS1302、PCF8591、AT24C02、PWM、串口通信、NE55…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/002_Lanqiaobei/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/002_Lanqiaobei/</guid><pubDate>Wed, 12 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;https://github.com/Joker001014/LanQiaoCup&quot;&gt;Github代码仓库链接&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;一、前言&lt;/h2&gt;
+&lt;p&gt;从今天开始，笔者将向大家逐一讲解蓝桥杯的大部分竞赛模块，笔者将基于上一篇文章（&lt;a href=&quot;https://joker001014.github.io/blog/001_Lanqiaobei&quot;&gt;蓝桥杯单片机设计与开发_标准模板&lt;/a&gt;）中讲解的标准模板编写程序。按照顺序（DS18B20、DS1302、PCF8591、AT24C02、PWM、串口通信、NE555以及超声波测距），为大家做出详细编程指导。&lt;/p&gt;
 &lt;h2&gt;二、DS18B20 温度传感器&lt;/h2&gt;
-&lt;p&gt;DS18B20 又叫温度传感器。笔者将基于蓝桥杯官方给的赛点资源包（&lt;a href=&quot;https://download.csdn.net/download/weixin_53159274/18576531&quot;&gt;蓝桥杯单片机设计与开发_赛点资源数据包&lt;/a&gt;）进行编程，为大家讲解编程调用各语句的含义，帮助大家编写温度传感器的程序，也便于大家记忆。&lt;/p&gt;
-&lt;h3&gt;1、==导入底层驱动代码==&lt;/h3&gt;
-&lt;p&gt;首先，创建工程和导入.c文件笔者已在文章（&lt;a href=&quot;https://blog.csdn.net/weixin_53159274/article/details/116534261&quot;&gt;蓝桥杯单片机设计与开发_标准模板&lt;/a&gt;）中向大家详细介绍了，这里就不再赘述。
-读者可下载赛点资源包（&lt;a href=&quot;https://download.csdn.net/download/weixin_53159274/18576531&quot;&gt;蓝桥杯单片机设计与开发_赛点资源数据包&lt;/a&gt;），解压后可得到以下图片所示文件。
-&lt;img src=&quot;https://i-blog.csdnimg.cn/blog_migrate/1c4d8bb1dcb9e547554de7cf12af67b4.jpeg#pic_center&quot; alt=&quot;在这里插入图片描述&quot;&gt;
+&lt;p&gt;DS18B20 又叫温度传感器。笔者将基于蓝桥杯官方给的赛点资源包（&lt;a href=&quot;https://github.com/Joker001014/LanQiaoCup/tree/main/%E8%B5%9B%E7%82%B9%E8%B5%84%E6%BA%90%E6%95%B0%E6%8D%AE%E5%8C%85_SCM&quot;&gt;蓝桥杯单片机设计与开发_赛点资源数据包&lt;/a&gt;）进行编程，为大家讲解编程调用各语句的含义，帮助大家编写温度传感器的程序，也便于大家记忆。&lt;/p&gt;
+&lt;h3&gt;1、导入底层驱动代码&lt;/h3&gt;
+&lt;p&gt;首先，创建工程和导入.c文件笔者已在文章（&lt;a href=&quot;https://joker001014.github.io/blog/001_Lanqiaobei&quot;&gt;蓝桥杯单片机设计与开发_标准模板&lt;/a&gt;）中向大家详细介绍了，这里就不再赘述。
+读者可下载&lt;code class=&quot;language-text&quot;&gt;赛点资源包&lt;/code&gt;，解压后可得到以下图片所示文件。
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 48.734177215189874%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAKABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAgAF/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAAB2kUKMf/EABgQAAIDAAAAAAAAAAAAAAAAAAABAhAx/9oACAEBAAEFAk7joz//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAVEAEBAAAAAAAAAAAAAAAAAAAQAf/aAAgBAQAGPwJr/8QAHBAAAgICAwAAAAAAAAAAAAAAAAERMRBRIXGR/9oACAEBAAE/IeRpwKVqzzE32XP/2gAMAwEAAgADAAAAEDTP/8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAIAQMBAT8QV//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8QP//EABwQAQACAgMBAAAAAAAAAAAAAAEAEUGxITGRwf/aAAgBAQABPxBEWt0AdxWUEi0z7nO/DPhuaZ//2Q==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;在这里插入图片描述&quot;
+        title=&quot;&quot;
+        src=&quot;/blog/static/93f78654fba2229b6f46f4f17b49c028/828fb/1.jpg&quot;
+        srcset=&quot;/blog/static/93f78654fba2229b6f46f4f17b49c028/ff44c/1.jpg 158w,
+/blog/static/93f78654fba2229b6f46f4f17b49c028/a6688/1.jpg 315w,
+/blog/static/93f78654fba2229b6f46f4f17b49c028/828fb/1.jpg 630w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+    &lt;/span&gt;
 我们双击打开文件“3-底层驱动代码参考”文件，将得到以下.c.h文件。接下来将包含DS18B20 的文件onewire.c 和 onewire.h 文件拷贝到工程所在文件夹中。
-&lt;img src=&quot;https://i-blog.csdnimg.cn/blog_migrate/153a08155e563e45e4ae2f16a9fa1431.jpeg#pic_center&quot; alt=&quot;在这里插入图片描述&quot;&gt;
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 609px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 26.58227848101266%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAFABQDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAX/xAAVAQEBAAAAAAAAAAAAAAAAAAABAP/aAAwDAQACEAMQAAABtgQn/8QAFRABAQAAAAAAAAAAAAAAAAAAARD/2gAIAQEAAQUCG//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABQQAQAAAAAAAAAAAAAAAAAAABD/2gAIAQEABj8Cf//EABgQAAIDAAAAAAAAAAAAAAAAAAABESEx/9oACAEBAAE/IaidG2f/2gAMAwEAAgADAAAAEP8A7//EABYRAAMAAAAAAAAAAAAAAAAAAAABEf/aAAgBAwEBPxCIiP/EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8QP//EABoQAAMAAwEAAAAAAAAAAAAAAAABESFBUZH/2gAIAQEAAT8QdS44X6LlnR//2Q==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;在这里插入图片描述&quot;
+        title=&quot;&quot;
+        src=&quot;/blog/static/978b4704777367f0ced38f8447c542f4/51891/2.jpg&quot;
+        srcset=&quot;/blog/static/978b4704777367f0ced38f8447c542f4/ff44c/2.jpg 158w,
+/blog/static/978b4704777367f0ced38f8447c542f4/a6688/2.jpg 315w,
+/blog/static/978b4704777367f0ced38f8447c542f4/51891/2.jpg 609w&quot;
+        sizes=&quot;(max-width: 609px) 100vw, 609px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+    &lt;/span&gt;
 然后双击工程中 Source Group 1，将这两个文件导入，便可以开始编写程序了。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://i-blog.csdnimg.cn/blog_migrate/7a8ba44c1524f7130abde7cbe48163ae.jpeg#pic_center&quot; alt=&quot;在这里插入图片描述&quot;&gt;&lt;/p&gt;
-&lt;h3&gt;2、==DS18B20驱动函数==&lt;/h3&gt;
-&lt;p&gt;首先，在编写驱动函数之前，我们需要对底层驱动代码 onewire.c 中的延迟函数 Delay_OneWire() 做出修改，将==延迟时间增大 12 倍！==。因为比赛使用的IAP15系列单片机速度比STC89C52系列单片机速度快12倍，如果不改时序上将出现问题，无法正常读取温度。
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 243px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blog/static/b96066340e660a5aa0bd0c52120cb54f/3f316/3.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 65.82278481012659%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAgADBf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAeytCGcf/8QAGRAAAgMBAAAAAAAAAAAAAAAAABEBAhAS/9oACAEBAAEFAuUQiaVxZ//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABYQAQEBAAAAAAAAAAAAAAAAADEAEP/aAAgBAQAGPwKIxz//xAAYEAEBAQEBAAAAAAAAAAAAAAABABExcf/aAAgBAQABPyFHBBzRxZpCGPt//9oADAMBAAIAAwAAABDAH//EABYRAQEBAAAAAAAAAAAAAAAAAAABEf/aAAgBAwEBPxBtf//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8QP//EABkQAQADAQEAAAAAAAAAAAAAAAEAESFB0f/aAAgBAQABPxAizB2Uhp61EWWY4XpHTZHlQN+J/9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;在这里插入图片描述&quot;
+        title=&quot;&quot;
+        src=&quot;/blog/static/b96066340e660a5aa0bd0c52120cb54f/3f316/3.jpg&quot;
+        srcset=&quot;/blog/static/b96066340e660a5aa0bd0c52120cb54f/ff44c/3.jpg 158w,
+/blog/static/b96066340e660a5aa0bd0c52120cb54f/3f316/3.jpg 243w&quot;
+        sizes=&quot;(max-width: 243px) 100vw, 243px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h3&gt;2、DS18B20驱动函数&lt;/h3&gt;
+&lt;p&gt;首先，在编写驱动函数之前，我们需要对底层驱动代码 onewire.c 中的延迟函数 Delay_OneWire() 做出修改，将延迟时间增大 12 倍！。因为比赛使用的IAP15系列单片机速度比STC89C52系列单片机速度快12倍，如果不改时序上将出现问题，无法正常读取温度。
 笔者采用一个 for 循环，在 while 循环中重复循环 12 次，达到延迟效果。&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;c&quot;&gt;&lt;pre class=&quot;language-c&quot;&gt;&lt;code class=&quot;language-c&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;Delay_OneWire&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;u16 t&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;  &lt;span class=&quot;token comment&quot;&gt;//STC89C52RC&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
@@ -20,10 +91,70 @@
 		&lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;num &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;num &lt;span class=&quot;token operator&quot;&gt;&amp;lt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;num&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;     &lt;span class=&quot;token comment&quot;&gt;//延迟时长扩大12倍&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;接下来，就开始在 onewire.c 文件中编写温度读取函数。我们可以打开赛点资源数据包中的文件“5-竞赛板芯片资料”。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://i-blog.csdnimg.cn/blog_migrate/d5c53a59516e92f328ae40ed8e800007.jpeg#pic_center&quot; alt=&quot;在这里插入图片描述&quot;&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blog/static/e5f3caa93863fbe80e44f65abed177c5/f7974/4.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 47.46835443037975%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAJABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAIBBf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAezc2aD/xAAYEAACAwAAAAAAAAAAAAAAAAACEBEhMv/aAAgBAQABBQKbQ6X/xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAUEAEAAAAAAAAAAAAAAAAAAAAg/9oACAEBAAY/Al//xAAbEAACAwADAAAAAAAAAAAAAAAAARExUSFxof/aAAgBAQABPyFPJRwS8JeelhvY7P/aAAwDAQACAAMAAAAQpB//xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAgBAwEBPxCq/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPxA//8QAGxABAQEAAgMAAAAAAAAAAAAAAREAEFFhobH/2gAIAQEAAT8QKwsECYGwhe94memZ+HB//9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;在这里插入图片描述&quot;
+        title=&quot;&quot;
+        src=&quot;/blog/static/e5f3caa93863fbe80e44f65abed177c5/828fb/4.jpg&quot;
+        srcset=&quot;/blog/static/e5f3caa93863fbe80e44f65abed177c5/ff44c/4.jpg 158w,
+/blog/static/e5f3caa93863fbe80e44f65abed177c5/a6688/4.jpg 315w,
+/blog/static/e5f3caa93863fbe80e44f65abed177c5/828fb/4.jpg 630w,
+/blog/static/e5f3caa93863fbe80e44f65abed177c5/0ede0/4.jpg 945w,
+/blog/static/e5f3caa93863fbe80e44f65abed177c5/f7974/4.jpg 1097w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
 打开“DS18B20”芯片手册。笔者将借助芯片手册中的资料编写温度读取函数并为大家讲解。
-&lt;img src=&quot;https://i-blog.csdnimg.cn/blog_migrate/d9433b3ccc577d2fce699bc8972afc20.jpeg#pic_center&quot; alt=&quot;在这里插入图片描述&quot;&gt;
-==温度读取函数==：在编写温度读取函数时，我们只需要通过调用底层驱动函数中的初始化、写入、读取函数。&lt;/p&gt;
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 621px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blog/static/c742dcca309e732fbac19186289b909f/a430b/5.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 60.12658227848101%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAMABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAQAF/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAAB3CQmP//EABUQAQEAAAAAAAAAAAAAAAAAAAIQ/9oACAEBAAEFAjTf/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFBABAAAAAAAAAAAAAAAAAAAAIP/aAAgBAQAGPwJf/8QAGhAAAgMBAQAAAAAAAAAAAAAAAAERITGhUf/aAAgBAQABPyGUOul3XRtznTTPR6f/2gAMAwEAAgADAAAAEHfP/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPxA//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPxA//8QAHRAAAgIBBQAAAAAAAAAAAAAAAAEhMRFBYXGBsf/aAAgBAQABPxCQwlhvDeGlKEk92OuZ5H//2Q==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;在这里插入图片描述&quot;
+        title=&quot;&quot;
+        src=&quot;/blog/static/c742dcca309e732fbac19186289b909f/a430b/5.jpg&quot;
+        srcset=&quot;/blog/static/c742dcca309e732fbac19186289b909f/ff44c/5.jpg 158w,
+/blog/static/c742dcca309e732fbac19186289b909f/a6688/5.jpg 315w,
+/blog/static/c742dcca309e732fbac19186289b909f/a430b/5.jpg 621w&quot;
+        sizes=&quot;(max-width: 621px) 100vw, 621px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+温度读取函数：在编写温度读取函数时，我们只需要通过调用底层驱动函数中的初始化、写入、读取函数。&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;c&quot;&gt;&lt;pre class=&quot;language-c&quot;&gt;&lt;code class=&quot;language-c&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;rd_temperature&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;void&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;   &lt;span class=&quot;token comment&quot;&gt;//读取温度函数&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
 	&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; temp &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;            &lt;span class=&quot;token comment&quot;&gt;//定义温度读取返回值&lt;/span&gt;
@@ -48,8 +179,70 @@
 	&lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; temp&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;             &lt;span class=&quot;token comment&quot;&gt;//返回温度读取值&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;其中，在写入函数 Write_DS18B20() 写入的指令可通过查阅芯片资料手册，不需要死记硬背。
-&lt;img src=&quot;https://i-blog.csdnimg.cn/blog_migrate/28a20e2c8eb09156f84f512bb040d9fb.jpeg#pic_center&quot; alt=&quot;在这里插入图片描述&quot;&gt;
-&lt;img src=&quot;https://i-blog.csdnimg.cn/blog_migrate/4da6e24b1fa02fbeda791ab9fe719b04.jpeg#pic_center&quot; alt=&quot;在这里插入图片描述&quot;&gt;
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blog/static/3c77557e2d689c8759fc258a1d663899/8b5c7/6.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 45.56962025316456%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAJABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAMCBAX/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/aAAwDAQACEAMQAAAB2F2UxMA//8QAGBAAAwEBAAAAAAAAAAAAAAAAAAFBEBH/2gAIAQEAAQUCZe5Uf//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABgQAAIDAAAAAAAAAAAAAAAAAAAgMUHh/9oACAEBAAY/AsLJT//EABwQAAICAgMAAAAAAAAAAAAAAABBAREQMVFxkf/aAAgBAQABPyGHexbNwRZvMOaH/9oADAMBAAIAAwAAABCs/wD/xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAgBAwEBPxCq/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPxA//8QAGhABAQEBAAMAAAAAAAAAAAAAAQARMSGhsf/aAAgBAQABPxBMcILHrAuQB4SvJ9zfS//Z&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;在这里插入图片描述&quot;
+        title=&quot;&quot;
+        src=&quot;/blog/static/3c77557e2d689c8759fc258a1d663899/828fb/6.jpg&quot;
+        srcset=&quot;/blog/static/3c77557e2d689c8759fc258a1d663899/ff44c/6.jpg 158w,
+/blog/static/3c77557e2d689c8759fc258a1d663899/a6688/6.jpg 315w,
+/blog/static/3c77557e2d689c8759fc258a1d663899/828fb/6.jpg 630w,
+/blog/static/3c77557e2d689c8759fc258a1d663899/0ede0/6.jpg 945w,
+/blog/static/3c77557e2d689c8759fc258a1d663899/8b5c7/6.jpg 1038w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blog/static/25111e35947f1035c0e84303d9e78723/69128/7.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 53.79746835443038%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAwABBf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAe0LGLbH/8QAGRABAAIDAAAAAAAAAAAAAAAAAAERAhAh/9oACAEBAAEFAqRbrJGv/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFRABAQAAAAAAAAAAAAAAAAAAEAH/2gAIAQEABj8CY//EABkQAQEBAAMAAAAAAAAAAAAAAAEAITFBcf/aAAgBAQABPyFWYWvEK6sPqOxf/9oADAMBAAIAAwAAABB03//EABURAQEAAAAAAAAAAAAAAAAAAAAR/9oACAEDAQE/EKr/xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAcEAEAAwACAwAAAAAAAAAAAAABABEhMUFhkbH/2gAIAQEAAT8Q4TNX7FQqQem4BZ7ZMAy4KzueZs2f/9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;在这里插入图片描述&quot;
+        title=&quot;&quot;
+        src=&quot;/blog/static/25111e35947f1035c0e84303d9e78723/828fb/7.jpg&quot;
+        srcset=&quot;/blog/static/25111e35947f1035c0e84303d9e78723/ff44c/7.jpg 158w,
+/blog/static/25111e35947f1035c0e84303d9e78723/a6688/7.jpg 315w,
+/blog/static/25111e35947f1035c0e84303d9e78723/828fb/7.jpg 630w,
+/blog/static/25111e35947f1035c0e84303d9e78723/0ede0/7.jpg 945w,
+/blog/static/25111e35947f1035c0e84303d9e78723/69128/7.jpg 1036w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
 在编写完温度传感器驱动函数后务必要在 onewire.h 文件中声明函数，才可在主函数中调用。&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;c&quot;&gt;&lt;pre class=&quot;language-c&quot;&gt;&lt;code class=&quot;language-c&quot;&gt;&lt;span class=&quot;token macro property&quot;&gt;&lt;span class=&quot;token directive-hash&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;token directive keyword&quot;&gt;ifndef&lt;/span&gt; &lt;span class=&quot;token expression&quot;&gt;__ONEWIRE_H&lt;/span&gt;&lt;/span&gt;
 &lt;span class=&quot;token macro property&quot;&gt;&lt;span class=&quot;token directive-hash&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;token directive keyword&quot;&gt;define&lt;/span&gt; &lt;span class=&quot;token macro-name&quot;&gt;__ONEWIRE_H&lt;/span&gt;&lt;/span&gt;
@@ -57,11 +250,11 @@
 &lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;rd_temperature&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;      &lt;span class=&quot;token comment&quot;&gt;//声明函数&lt;/span&gt;
 
 &lt;span class=&quot;token macro property&quot;&gt;&lt;span class=&quot;token directive-hash&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;token directive keyword&quot;&gt;endif&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;3、==主函数调用==&lt;/h3&gt;
+&lt;h3&gt;3、主函数调用&lt;/h3&gt;
 &lt;p&gt;在主函数中调用温度传感器驱动函数，首先需要在主函数开头包含驱动 DS18B20 驱动函数的头文件。&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;c&quot;&gt;&lt;pre class=&quot;language-c&quot;&gt;&lt;code class=&quot;language-c&quot;&gt;&lt;span class=&quot;token macro property&quot;&gt;&lt;span class=&quot;token directive-hash&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;token directive keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;STC15F2K60S2.h&quot;&lt;/span&gt;   &lt;span class=&quot;token comment&quot;&gt;//头文件&lt;/span&gt;&lt;/span&gt;
 &lt;span class=&quot;token macro property&quot;&gt;&lt;span class=&quot;token directive-hash&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;token directive keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;onewire.h&quot;&lt;/span&gt;        &lt;span class=&quot;token comment&quot;&gt;//包含DS18B20驱动头文件&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;==温度数值转换函数==
+&lt;p&gt;温度数值转换函数
 编写温度数据转换函数需要注意的是：读取温度数值需要再乘以 0.0625 转换成十进制温度值。笔者将读取温度值读取到小数点后四位，采用的方法是将乘以 0.0625 后的数据放大 10000 倍，再通过取余除数的方法得到各位小数值。因数值放大到百万级别，因此需要定义长整型数值。
 得到各位数后，通过改变缓冲区 dspbuf 的数值，在数码管1~7中显示读取到的温度数值。&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;c&quot;&gt;&lt;pre class=&quot;language-c&quot;&gt;&lt;code class=&quot;language-c&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;datachange&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;long&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; temp&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;     &lt;span class=&quot;token comment&quot;&gt;//读取温度数据转换函数&lt;/span&gt;
@@ -78,7 +271,7 @@
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;除此之外，笔者将个位数后的小数点显示出来，采取的方法是在定义 tab 数组时，在后面再定义十个小数点点亮的数，即通过将 0~9 对应的高八位减去 8，即可点亮小数点 dp 位。再在数码管显示的缓冲区上加上 11，即可显示带小数点的数字。&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;c&quot;&gt;&lt;pre class=&quot;language-c&quot;&gt;&lt;code class=&quot;language-c&quot;&gt;u8 code tab&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0xc0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0xf9&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0xa4&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0xb0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0x99&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0x92&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0x82&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0xf8&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0x80&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0x90&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0xff&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0x40&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0x79&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0x24&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0x30&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0x19&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0x12&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0x02&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0x78&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0x00&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0x10&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;   &lt;span class=&quot;token comment&quot;&gt;//定义数组存放数码管数字状态&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;==中断函数==
+&lt;p&gt;中断函数
 笔者在中断函数中定义每 50ms 产生一次中断，将温度读取标志位置 1，进行温度读取。&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;c&quot;&gt;&lt;pre class=&quot;language-c&quot;&gt;&lt;code class=&quot;language-c&quot;&gt;bit temp_flag &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;     &lt;span class=&quot;token comment&quot;&gt;//定义温度读取标志位&lt;/span&gt;
 &lt;span class=&quot;token keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;timer0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; interrupt &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;    &lt;span class=&quot;token comment&quot;&gt;//定义中断模式1&lt;/span&gt;
@@ -103,7 +296,7 @@
 		temp_flag &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;           &lt;span class=&quot;token comment&quot;&gt;//温度标志位置1&lt;/span&gt;
 	&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;==main主函数==
+&lt;p&gt;main主函数
 笔者在主函数开头中定义温度读取开关变量 temp_w，通过与 1 异或，可实功能：按一次 S4 打开温度传感器，每 50ms 读取一次温度；再按一次 S4 关闭温度传感器。&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;c&quot;&gt;&lt;pre class=&quot;language-c&quot;&gt;&lt;code class=&quot;language-c&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;      &lt;span class=&quot;token comment&quot;&gt;//主函数&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
@@ -138,7 +331,8 @@
 		&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 	&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;至此，本次 DS18B20 温度传感器程序已编写完毕。由于笔者近期事情比较多，更新文章较慢，请各位见谅。接下来几天笔者也将尽量早点将各个模块的编程都更新完毕！欢迎读者在评论区交流！！&lt;/p&gt;</content:encoded></item><item><title><![CDATA[蓝桥杯单片机设计与开发_标准模版]]></title><description><![CDATA[一、前言 笔者在本科大二期间，参加了202…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/001_Lanqiaobei/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/001_Lanqiaobei/</guid><pubDate>Sun, 09 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;一、前言&lt;/h1&gt;
+&lt;p&gt;至此，本次 DS18B20 温度传感器程序已编写完毕。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[蓝桥杯单片机设计与开发_标准模版]]></title><description><![CDATA[Github代码仓库链接 一、前言 笔者在本科大二期间，参加了202…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/001_Lanqiaobei/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/001_Lanqiaobei/</guid><pubDate>Sun, 09 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;https://github.com/Joker001014/LanQiaoCup&quot;&gt;Github代码仓库链接&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;一、前言&lt;/h1&gt;
 &lt;p&gt;笔者在本科大二期间，参加了2021年蓝桥杯单片机设计与开发组省赛，获省赛一等奖成功入围决赛，并获全国总决赛二等奖（证书见文末附录）。笔者将在接下来一个月的时间内不断更新关于蓝桥杯单片机设计与开发国赛的博文，初衷是与各位同学共勉，一起准备国赛，希望和大家共同取得佳绩。&lt;/p&gt;
 &lt;h2&gt;二、标准模板&lt;/h2&gt;
 &lt;p&gt;话不多说，我们直接进入正题。文章中所说的标准模板，其实是指包含了初始化函数、锁存器驱动、数码管驱动函数、矩阵键盘/独立键盘以及定时器中断等模块的可编译.c文件。
