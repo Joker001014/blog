@@ -7,5 +7,3 @@ description: "First blog"
 This is my first blog !!!
 
 Test2：12:43
-
-Test3: 12:52
