@@ -1,14 +1,42 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 02 Mar 2025 07:47:28 GMT</lastBuildDate><item><title><![CDATA[蓝桥杯]]></title><description><![CDATA[一、前言 首先，这篇文章是笔者第一次在 CSDN 上写博文，较为生疏，读者若有任何意见，欢迎大家在评论区交流！
-笔者目前为一名大二学生，参加了202…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/001 Lanqiaobei/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/001 Lanqiaobei/</guid><pubDate>Sun, 02 Mar 2025 22:12:03 GMT</pubDate><content:encoded>&lt;h1&gt;一、前言&lt;/h1&gt;
-&lt;p&gt;首先，这篇文章是笔者第一次在 CSDN 上写博文，较为生疏，读者若有任何意见，欢迎大家在评论区交流！
-笔者目前为一名大二学生，参加了2021年蓝桥杯单片机设计与开发组省赛，获省赛一等奖成功入围决赛。笔者将在接下来一个月的时间内不断更新关于蓝桥杯单片机设计与开发国赛的博文，初衷是与各位同学共勉，一起准备国赛，希望和大家共同取得佳绩。
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 02 Mar 2025 07:56:19 GMT</lastBuildDate><item><title><![CDATA[蓝桥杯单片机设计与开发_标准模版]]></title><description><![CDATA[一、前言 笔者目前为一名大二学生，参加了2021年蓝桥杯单片机设计与开发组省赛，获省赛一等奖成功入围决赛。笔者将在接下来一个月的时间内不断更新关于蓝桥杯单片机设计与开发国赛的博文，初衷是与各位同学共勉，一起准备国赛，希望和大家共同取得佳绩。
+同时，笔者也希望将这篇文章作为5…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/001 Lanqiaobei/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/001 Lanqiaobei/</guid><pubDate>Sun, 09 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;一、前言&lt;/h1&gt;
+&lt;p&gt;笔者目前为一名大二学生，参加了2021年蓝桥杯单片机设计与开发组省赛，获省赛一等奖成功入围决赛。笔者将在接下来一个月的时间内不断更新关于蓝桥杯单片机设计与开发国赛的博文，初衷是与各位同学共勉，一起准备国赛，希望和大家共同取得佳绩。
 同时，笔者也希望将这篇文章作为51单片机的一个基础部分，为本校自动化专业的学弟学妹们答疑解惑，祝学弟学妹们在即将到来的科技创新思维训练的结课测试中取得优异的成绩。&lt;/p&gt;
 &lt;h2&gt;二、标准模板&lt;/h2&gt;
 &lt;p&gt;话不多说，我们直接进入正题。文章中所说的标准模板，其实是指包含了==初始化函数==、==锁存器驱动==、==数码管驱动函数==、==矩阵键盘/独立键盘==以及==定时器中断==等模块的可编译.c文件。
 笔者的标准模板并不是采用模块化编程，笔者认为定义包含多个LED、数码管等多个头文件看起来较为繁琐，对于新手不太友善。而应付蓝桥杯比赛、51单片机考试等，笔者以为通过采用“函数模块化”编程即可，故本模板在一个.c文件中分模块定义多个驱动函数，也是十分简洁、容易上手的。&lt;/p&gt;
 &lt;h3&gt;1、创建工程&lt;/h3&gt;
 &lt;p&gt;创建工程：依次点击菜单栏中 Project → New uvision Project... → 输入工程名称并保存 →  选择STC15F2K60S2（注：需通过 stc-isp 软件 Keil 仿真添加头文件）→ 点击 File 下方空白页新建空文件并命名为.c文件 → 双击 Source Group 将.c文件加入工程，就可以开始在文件中编写程序。
-&lt;img src=&quot;https://i-blog.csdnimg.cn/blog_migrate/2a11db4c168a8998d70b1704e2a829b4.jpeg#pic_center&quot; alt=&quot;创建工程1&quot;&gt;
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 569px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blog/static/5780e6c83e96a626c73e2077d8357394/17a45/1.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 114.55696202531647%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAXABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAEDBf/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/9oADAMBAAIQAxAAAAHtWyIBmVoD/8QAGBAAAgMAAAAAAAAAAAAAAAAAARACAzH/2gAIAQEAAQUCIcnZgX//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAEDAQE/AR//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAECAQE/AR//xAAUEAEAAAAAAAAAAAAAAAAAAAAw/9oACAEBAAY/Ah//xAAcEAACAgIDAAAAAAAAAAAAAAAAARARIVExcYH/2gAIAQEAAT8hYqzXR6xtrZyRa2ODGo//2gAMAwEAAgADAAAAEMs/AP/EABYRAAMAAAAAAAAAAAAAAAAAAAAQEf/aAAgBAwEBPxAr/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAEREP/aAAgBAgEBPxCEW//EAB0QAQACAgIDAAAAAAAAAAAAAAEAESExEJFRYYH/2gAIAQEAAT8QoF+ggNbPsQAe0VIoHlg2AL6ZvrhyLNRbpn//2Q==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;创建工程1&quot;
+        title=&quot;&quot;
+        src=&quot;/blog/static/5780e6c83e96a626c73e2077d8357394/17a45/1.jpg&quot;
+        srcset=&quot;/blog/static/5780e6c83e96a626c73e2077d8357394/ff44c/1.jpg 158w,
+/blog/static/5780e6c83e96a626c73e2077d8357394/a6688/1.jpg 315w,
+/blog/static/5780e6c83e96a626c73e2077d8357394/17a45/1.jpg 569w&quot;
+        sizes=&quot;(max-width: 569px) 100vw, 569px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
 &lt;img src=&quot;https://i-blog.csdnimg.cn/blog_migrate/3f0476146d67c6ec67d2f304a8918521.jpeg#pic_center&quot; alt=&quot;创建工程2&quot;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://i-blog.csdnimg.cn/blog_migrate/0b5420e35f5d7f0b87f6b77bb471612f.jpeg#pic_center&quot; alt=&quot;创建工程3&quot;&gt;
 &lt;img src=&quot;https://i-blog.csdnimg.cn/blog_migrate/327cda79ba4ac8f07a64f8f09809efcf.jpeg#pic_center&quot; alt=&quot;创建工程4&quot;&gt;&lt;/p&gt;
@@ -234,9 +262,7 @@ u8 &lt;span class=&quot;token function&quot;&gt;Read_key&lt;/span&gt;&lt;span cl
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;c&quot;&gt;&lt;pre class=&quot;language-c&quot;&gt;&lt;code class=&quot;language-c&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;door&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0x80&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0x00&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;  &lt;span class=&quot;token comment&quot;&gt;//按下按键4，点亮所有LED&lt;/span&gt;
 &lt;span class=&quot;token keyword&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;door&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0xa0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0xff&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;  &lt;span class=&quot;token comment&quot;&gt;//按下按键5，打开蜂鸣器、继电器&lt;/span&gt;
 &lt;span class=&quot;token keyword&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt;dspbuf&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;    &lt;span class=&quot;token comment&quot;&gt;//按下按键6,第一位数码管显示数字1&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;到此，==蓝桥杯单片机设计与开发_标准模板==兼==新手入门STC89C52系列单片机基础模板==讲解到此结束啦，读者若有不懂的欢迎在提问区讨论！！！
-最后，在文末附上18年科创结课考试试题，供本校自动化专业的学弟学妹们参考（图片略微模糊），祝各位取得佳绩。
-&lt;img src=&quot;https://i-blog.csdnimg.cn/blog_migrate/5cc0046bd0297025625fc85cd249599c.jpeg#pic_center&quot; alt=&quot;在这里插入图片描述&quot;&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[New Beginnings]]></title><description><![CDATA[Far far away, behind the word mountains, far from the countries Vokalia and
+&lt;p&gt;到此，==蓝桥杯单片机设计与开发_标准模板==兼==新手入门STC89C52系列单片机基础模板==讲解到此结束啦，读者若有不懂的欢迎在提问区讨论！！！&lt;/p&gt;</content:encoded></item><item><title><![CDATA[New Beginnings]]></title><description><![CDATA[Far far away, behind the word mountains, far from the countries Vokalia and
 Consonantia, there live the blind texts. Separated they live in…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/new-beginnings/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/new-beginnings/</guid><pubDate>Thu, 28 May 2015 22:40:32 GMT</pubDate><content:encoded>&lt;p&gt;Far far away, behind the word mountains, far from the countries Vokalia and
 Consonantia, there live the blind texts. Separated they live in Bookmarksgrove
 right at the coast of the Semantics, a large language ocean. A small river named
