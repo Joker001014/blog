@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[JokerDebug Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 08 Mar 2025 13:43:53 GMT</lastBuildDate><item><title><![CDATA[Self-introduction]]></title><description><![CDATA[Hi, I'm JokerDebug, a Developer 🚀 from China. Github
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[JokerDebug Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 08 Mar 2025 14:11:29 GMT</lastBuildDate><item><title><![CDATA[Self-introduction]]></title><description><![CDATA[Hi, I'm JokerDebug, a Developer 🚀 from China. Github
 Gmail  Talking about Personal Stuffs: 👨🏽‍💻 I’m currently working on myblog; 🌱 I'm…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/hello-world/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/hello-world/</guid><pubDate>Sat, 01 Mar 2025 22:12:03 GMT</pubDate><content:encoded>&lt;!-- dynamic typing effect --&gt;
 &lt;div align=&quot;center&quot;&gt;
     &lt;a href=&quot;https://blog.505218.xyz&quot;&gt;
@@ -4781,7 +4781,1300 @@ q              // 退出 debug&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
       /&gt;
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;至此，关于李治军老师的操作系统课程 bochs 使用方法已介绍完毕，更加具体的使用方法可以参考 Bochs使用手册 &lt;a href=&quot;https://bochs.sourceforge.io/doc/docbook/user/index.html&quot;&gt;Bochs User Manual (sourceforge.io)&lt;/a&gt;。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[蓝桥杯单片机设计与开发_基础模块_超声波测距]]></title><description><![CDATA[Github代码仓库链接 一、前言 承接上文，本文将介绍最后一个蓝桥杯模块（超声波测距），为大家做出详细编程指导。 二、超声波测距 超声波指的是频率超过人类可听范围（2…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/009 Lanqiaobei/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/009 Lanqiaobei/</guid><pubDate>Wed, 02 Jun 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;https://github.com/Joker001014/LanQiaoCup&quot;&gt;Github代码仓库链接&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;至此，关于李治军老师的操作系统课程 bochs 使用方法已介绍完毕，更加具体的使用方法可以参考 Bochs使用手册 &lt;a href=&quot;https://bochs.sourceforge.io/doc/docbook/user/index.html&quot;&gt;Bochs User Manual (sourceforge.io)&lt;/a&gt;。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[【学习随记】汇编语言_伪指令大全]]></title><description><![CDATA[伪指令前通常加一个  来区分它们与普通的机器指令。
+ 主要起到区分伪指令和机器指令的作用。伪指令不会生成机器码，而是告诉汇编器如何组织和布局程序，而机器指令是直接由 CPU 执行的。 .text 和 .data…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/024_record_asm/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/024_record_asm/</guid><pubDate>Wed, 04 Jan 2023 00:00:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
+&lt;p&gt;伪指令前通常加一个 &lt;code class=&quot;language-text&quot;&gt;.&lt;/code&gt; 来区分它们与普通的机器指令。
+&lt;code class=&quot;language-text&quot;&gt;.&lt;/code&gt; 主要起到&lt;strong&gt;区分伪指令和机器指令&lt;/strong&gt;的作用。伪指令不会生成机器码，而是告诉汇编器如何组织和布局程序，而机器指令是直接由 CPU 执行的。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;.text 和 .data 放在一起，表示不区分代码段、数据段&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;以 &lt;code class=&quot;language-text&quot;&gt;.&lt;/code&gt; 开头的伪指令是汇编器（Assembler）提供的 &lt;strong&gt;汇编器指令&lt;/strong&gt;（Assembler Directives），用于控制汇编过程、定义数据、布局内存等。以下是常见的 RISC-V 汇编器指令及其作用的分类表格：&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h3&gt;&lt;strong&gt;1. 数据定义伪指令&lt;/strong&gt;&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;strong&gt;伪指令&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;格式&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;作用&lt;/strong&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;.data&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;.data&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;切换到数据段，后续定义的数据将存储在数据段中。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;.rodata&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;.rodata&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;切换到只读数据段，后续定义的数据将存储在只读数据段中。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;.bss&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;.bss&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;切换到未初始化数据段（BSS 段），后续定义的数据将存储在 BSS 段中。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;.byte&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;.byte value1, value2, ...&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;定义一个或多个字节数据。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;.half&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;.half value1, value2, ...&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;定义一个或多个半字（2 字节）数据。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;.word&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;.word value1, value2, ...&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;定义一个或多个字（4 字节）数据。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;.dword&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;.dword value1, value2, ...&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;定义一个或多个双字（8 字节）数据。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;.asciz&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;.asciz &quot;string&quot;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;定义一个以空字符（&lt;code class=&quot;language-text&quot;&gt;\0&lt;/code&gt;）结尾的字符串。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;.string&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;.string &quot;string&quot;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;定义一个字符串（与 &lt;code class=&quot;language-text&quot;&gt;.asciz&lt;/code&gt; 类似）。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;.space&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;.space size&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;分配指定大小的未初始化空间（以字节为单位）。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h3&gt;&lt;strong&gt;2. 内存布局伪指令&lt;/strong&gt;&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;strong&gt;伪指令&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;格式&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;作用&lt;/strong&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;.org&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;.org address&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;设置当前段的位置计数器为指定地址。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;.align&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;.align n&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;将当前位置对齐到 &lt;code class=&quot;language-text&quot;&gt;2^n&lt;/code&gt; 的边界。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;.skip&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;.skip size&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;跳过指定大小的字节（与 &lt;code class=&quot;language-text&quot;&gt;.space&lt;/code&gt; 类似）。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h3&gt;&lt;strong&gt;3. 符号定义伪指令&lt;/strong&gt;&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;strong&gt;伪指令&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;格式&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;作用&lt;/strong&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;.globl&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;.globl symbol&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;声明一个全局符号，使其对其他文件可见。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;.local&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;.local symbol&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;声明一个局部符号，使其仅在当前文件中可见。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;.weak&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;.weak symbol&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;声明一个弱符号，如果未定义则不会报错。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;.equ&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;.equ name, value&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;定义一个符号常量。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;.set&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;.set name, value&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;定义一个符号常量（与 &lt;code class=&quot;language-text&quot;&gt;.equ&lt;/code&gt; 类似）。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h3&gt;&lt;strong&gt;4. 段控制伪指令&lt;/strong&gt;&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;strong&gt;伪指令&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;格式&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;作用&lt;/strong&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;.text&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;.text&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;切换到代码段，后续定义的指令将存储在代码段中。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;.section&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;.section name&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;切换到指定名称的段。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;.previous&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;.previous&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;切换回上一个段。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h3&gt;&lt;strong&gt;5. 条件伪指令&lt;/strong&gt;&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;strong&gt;伪指令&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;格式&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;作用&lt;/strong&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;.if&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;.if condition&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;如果条件为真，则汇编后续代码。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;.else&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;.else&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;与 &lt;code class=&quot;language-text&quot;&gt;.if&lt;/code&gt; 配合使用，表示条件为假时的代码块。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;.endif&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;.endif&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;结束条件汇编块。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;.ifdef&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;.ifdef symbol&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;如果符号已定义，则汇编后续代码。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;.ifndef&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;.ifndef symbol&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;如果符号未定义，则汇编后续代码。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h3&gt;&lt;strong&gt;6. 程序入口与结束伪指令&lt;/strong&gt;&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;strong&gt;伪指令&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;格式&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;作用&lt;/strong&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;.entry&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;.entry&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;定义程序入口点（通常由链接器使用）。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;.end&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;.end&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;标记汇编文件的结束。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h3&gt;&lt;strong&gt;7. 其他伪指令&lt;/strong&gt;&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;strong&gt;伪指令&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;格式&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;作用&lt;/strong&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;.include&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;.include &quot;filename&quot;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;包含另一个汇编文件。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;.macro&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;.macro name arg1, arg2, ...&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;定义一个宏。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;.endm&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;.endm&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;结束宏定义。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;.rept&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;.rept count&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;重复汇编代码块指定次数。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;.endr&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;.endr&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;结束重复块。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h3&gt;&lt;strong&gt;示例代码&lt;/strong&gt;&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;assembly&quot;&gt;&lt;pre class=&quot;language-assembly&quot;&gt;&lt;code class=&quot;language-assembly&quot;&gt;.data                    # 切换到数据段
+    my_var: .word 42     # 定义一个 32 位整数
+    msg: .asciz &amp;quot;Hello&amp;quot;  # 定义一个字符串
+
+.text                    # 切换到代码段
+.globl main              # 声明 main 为全局符号
+main:
+    la a0, msg           # 加载 msg 的地址到 a0
+    li a7, 4             # 设置系统调用号为 4（打印字符串）
+    ecall                # 触发系统调用
+    li a7, 10            # 设置系统调用号为 10（退出程序）
+    ecall                # 触发系统调用
+.end                    # 结束汇编文件&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[【学习随记】编译神器_Makefile]]></title><description><![CDATA[一种常用于编译的脚本语言，可以更好更方便地管理项目的代码编译。在文件中定义一系列的规则来指定哪些文件先编译，一旦写好后，只需要一个 make 命令就可以编译 一、Makefile 三要素 一般在 makefile 文件中会使用  命令对源代码进行编译 makefile…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/023_record_Makefile/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/023_record_Makefile/</guid><pubDate>Tue, 03 Jan 2023 00:00:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
+&lt;p&gt;一种常用于编译的脚本语言，可以更好更方便地管理项目的代码编译。在文件中定义一系列的规则来指定哪些文件先编译，一旦写好后，只需要一个 make 命令就可以编译&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;一、Makefile 三要素&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;一般在 makefile 文件中会使用 &lt;code class=&quot;language-text&quot;&gt;gcc&lt;/code&gt; 命令对源代码进行编译&lt;/li&gt;
+&lt;li&gt;makefile 的编写规则：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;makefile&quot;&gt;&lt;pre class=&quot;language-makefile&quot;&gt;&lt;code class=&quot;language-makefile&quot;&gt;&lt;span class=&quot;token target symbol&quot;&gt;目标&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;依赖
+	命令
+// 目标：要生成的目标文件
+// 依赖：目标文件由哪些文件生成
+// 命令：执行该命令由依赖文件生成目标&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;二、Makefile 工作原理&lt;/h3&gt;
+&lt;p&gt;Makefile 的 工作原理 可以概括为两步：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;检查依赖是否 &lt;strong&gt;存在&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;检查是否需要 &lt;strong&gt;更新&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;可以用以下伪代码来进行表述&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;// 检查依赖是否存在
+if(依赖存在)
+	//执行规则中的命令生成依赖文件的目标文件
+	if(目标的修改时间 &gt; 依赖的修改时间)
+		不更新目标文件
+	else
+		更新目标文件
+else
+	向下搜索，查找是否有生成该依赖文件的规则
+	if(没有规则能生成该依赖文件)
+		ERROR!&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;三、Makefile 基本使用方法&lt;/h3&gt;
+&lt;p&gt;我们以经典的 TCP 通讯为例来说明，当我们编写了 TCP 的服务端和客户端两个程序后，要进行编译的话需要运行两次 &lt;code class=&quot;language-text&quot;&gt;gcc&lt;/code&gt; 指令，比较繁琐，尤其是当我们项目工程具有更多的源文件时，使用 makefile 实现一键编译，将非常的方便。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;makefile编写&lt;/strong&gt;，生成 TCP_Server、TCP_Client 两个可执行文件。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;makefile&quot;&gt;&lt;pre class=&quot;language-makefile&quot;&gt;&lt;code class=&quot;language-makefile&quot;&gt;&lt;span class=&quot;token target symbol&quot;&gt;all&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;TCP_Server TCP_Client
+&lt;span class=&quot;token target symbol&quot;&gt;TCP_Server&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;tcp_server.c
+	gcc tcp_server.c -o TCP_Server
+&lt;span class=&quot;token target symbol&quot;&gt;TCP_Client&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;tcp_client.c
+	gcc tcp_client.c -o TCP_Client&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;编写完成后，我们只需在当前目录下运行 &lt;code class=&quot;language-text&quot;&gt;make all&lt;/code&gt; 即可同时编译生成 TCP_Server、TCP_Client 两个目标文件。具体的 Makefile 变量、指令、参数将在下文展开。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;运行可执行文件&lt;/strong&gt;（以 TCP 程序为例）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;linux&quot;&gt;&lt;pre class=&quot;language-linux&quot;&gt;&lt;code class=&quot;language-linux&quot;&gt;./TCP_Server 192.168.0.109 1234
+./TCP_Client 192.168.0.109 1234&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;四、Makefile 变量&lt;/h3&gt;
+&lt;h4&gt;1、变量类型&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;自定义变量&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;var = abc     // 变量定义&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;系统变量&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;makefile&quot;&gt;&lt;pre class=&quot;language-makefile&quot;&gt;&lt;code class=&quot;language-makefile&quot;&gt;CC &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; gcc-3.4                     // 指定编译器的类型
+CPPFLAGS &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; -I./                  // 指定预处理的选项 
+CFLAGS &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; -Wall -O2               // 指定编译器选项（例如调试信息、优化等）
+LDFLAGS &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; -L                     // 指定链接器选项
+SRC_FILES &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; main.c foo.c bar.c   // 指定源文件列表&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;注意：变量引用时使用&lt;code class=&quot;language-text&quot;&gt;$&lt;/code&gt;，例：&lt;code class=&quot;language-text&quot;&gt;$(CC)&lt;/code&gt;。
+3. 自动变量&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;makefile&quot;&gt;&lt;pre class=&quot;language-makefile&quot;&gt;&lt;code class=&quot;language-makefile&quot;&gt;&lt;span class=&quot;token variable&quot;&gt;$@&lt;/span&gt; 表示当前规则的目标文件
+&lt;span class=&quot;token variable&quot;&gt;$^&lt;/span&gt; 表示规则中的所有条件, 组成一个列表, 以空格隔开, 如果这个列表中有重复的项则消除重复项 
+&lt;span class=&quot;token variable&quot;&gt;$&amp;lt;&lt;/span&gt; 表示当前规则的第一个依赖文件名
+&lt;span class=&quot;token variable&quot;&gt;$?&lt;/span&gt; 第一变化的依赖&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ol start=&quot;4&quot;&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;$&lt;/code&gt;使用拓展：用于执行 Shell 命令，如&lt;code class=&quot;language-text&quot;&gt;NAME := $(shell uname)&lt;/code&gt;，会执行 &lt;code class=&quot;language-text&quot;&gt;uname&lt;/code&gt; 命令，返回当前操作系统的名称&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4&gt;2、赋值方式&lt;/h4&gt;
+&lt;p&gt;makefile 的赋值方式有简单赋值、递归赋值、条件赋值、追加赋值。本文只介绍最为常用的赋值方式，即简单赋值 &lt;code class=&quot;language-text&quot;&gt;=&lt;/code&gt;。（其余赋值方式可参考文章：&lt;a href=&quot;https://blog.csdn.net/m0_49476241/article/details/130556354&quot;&gt;Makefile基础教程（变量的介绍和使用）_makefile 使用变量 编译-CSDN博客&lt;/a&gt;）&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;x = abc         // 定义变量并赋值 
+bar = $(x)      // 使用变量, $(变量名)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ol&gt;
+&lt;li&gt;简单赋值&lt;code class=&quot;language-text&quot;&gt;:=&lt;/code&gt;，在赋值时立即求值&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;makefile&quot;&gt;&lt;pre class=&quot;language-makefile&quot;&gt;&lt;code class=&quot;language-makefile&quot;&gt;A &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; foo
+B &lt;span class=&quot;token operator&quot;&gt;:=&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;A&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+A &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; bar
+
+&lt;span class=&quot;token target symbol&quot;&gt;all&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    echo &lt;span class=&quot;token variable&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;B&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;  &lt;span class=&quot;token comment&quot;&gt;# 输出 foo&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;递归赋值&lt;code class=&quot;language-text&quot;&gt;=&lt;/code&gt;，在使用变量时才会求值（即延迟求值）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;makefile&quot;&gt;&lt;pre class=&quot;language-makefile&quot;&gt;&lt;code class=&quot;language-makefile&quot;&gt;A &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; foo
+B &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;A&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+A &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; bar
+
+&lt;span class=&quot;token target symbol&quot;&gt;all&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    echo &lt;span class=&quot;token variable&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;B&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;  &lt;span class=&quot;token comment&quot;&gt;# 输出 bar，A由B下一行代码修改为 bar&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;五、Makefile 工程应用&lt;/h3&gt;
+&lt;h4&gt;1、编译操作&lt;/h4&gt;
+&lt;p&gt;makefile 在工程上的应用示例如下：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;编译 main.c 、 fun1.c 、 func2.c 生成对应的目标文件 &lt;code class=&quot;language-text&quot;&gt;main.o、func1.o、func2.0&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;链接所有的目标文件，生成最后的可执行文件&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;基础写法&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;makefile&quot;&gt;&lt;pre class=&quot;language-makefile&quot;&gt;&lt;code class=&quot;language-makefile&quot;&gt;CC &lt;span class=&quot;token operator&quot;&gt;:=&lt;/span&gt; gcc
+TARGET &lt;span class=&quot;token operator&quot;&gt;:=&lt;/span&gt; hello
+
+&lt;span class=&quot;token comment&quot;&gt;# 生成可执行文件&lt;/span&gt;
+&lt;span class=&quot;token target symbol&quot;&gt;TARGET&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; hello.o func.o
+	&lt;span class=&quot;token variable&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;CC&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; -o TARGET hello.o func.o
+
+&lt;span class=&quot;token comment&quot;&gt;# 生成目标文件&lt;/span&gt;
+&lt;span class=&quot;token target symbol&quot;&gt;hello.o&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; hello.c
+	&lt;span class=&quot;token variable&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;CC&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; -c -o hello.o hello.c
+&lt;span class=&quot;token target symbol&quot;&gt;func.o&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; func.c
+	&lt;span class=&quot;token variable&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;CC&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; -c -o func.o func.c
+
+&lt;span class=&quot;token target symbol&quot;&gt;all&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; TARGET&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;gcc 编译器参数大全可参考：&lt;a href=&quot;http://static.kancloud.cn/machh03/server/2141855&quot;&gt;20个最常用的GCC编译器参数&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;常用参数：&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;-o    指定输出文件名
+-c    只编译源代码，生成目标文件，但不会生成最终可执行文件&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;进阶写法&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;makefile&quot;&gt;&lt;pre class=&quot;language-makefile&quot;&gt;&lt;code class=&quot;language-makefile&quot;&gt;TARGET &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; hello
+object &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; hello.o func1.o func2.o
+CC &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; gcc
+CFLAGS &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; -Wall -O2
+
+&lt;span class=&quot;token target symbol&quot;&gt;TARGET&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;object&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+	&lt;span class=&quot;token variable&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;CC&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; -o &lt;span class=&quot;token variable&quot;&gt;$@&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$^&lt;/span&gt;     &lt;span class=&quot;token comment&quot;&gt;# 规则中的目标 规则中的依赖&lt;/span&gt;
+	
+&lt;span class=&quot;token target symbol&quot;&gt;%.o&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; %.c 
+	&lt;span class=&quot;token variable&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;CC&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; -o &lt;span class=&quot;token variable&quot;&gt;$@&lt;/span&gt; -c &lt;span class=&quot;token variable&quot;&gt;$&amp;lt;&lt;/span&gt;  &lt;span class=&quot;token comment&quot;&gt;# 规则中的目标 规则中的第一个条件&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;2、清理操作&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;清除目标文件&lt;/strong&gt;，在 makefile 中使用 rm 指令删除文件，然后在终端中输入 make clean= 清除生成的目标文件&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;基础写法&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;makefile&quot;&gt;&lt;pre class=&quot;language-makefile&quot;&gt;&lt;code class=&quot;language-makefile&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;# 清除所有 .o 后缀文件及可执行文件&lt;/span&gt;
+&lt;span class=&quot;token target symbol&quot;&gt;clean&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+	rm *.o TARGET&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;参数： &lt;code class=&quot;language-text&quot;&gt;rm -f&lt;/code&gt; 强制执行删除操作。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;进阶写法&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;makefile&quot;&gt;&lt;pre class=&quot;language-makefile&quot;&gt;&lt;code class=&quot;language-makefile&quot;&gt;&lt;span class=&quot;token target symbol&quot;&gt;clean&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; -rm -f &lt;span class=&quot;token variable&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;target&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;object&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[【学习随记】科研神器_WebPlotDigitizer]]></title><description><![CDATA[前言：Obsidian 是一款很多大神都在用的笔记软件，具有强大的功能，能够满足日常各种笔记的需求。强大之处在于：Obsidian 能够安装各种强大的插件，实现各种功能。
+废话不多说，玩转 Obsidian 仅需这篇文章足矣，我们直接进入正题。 一、Obsidian…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/022_record_Obsidian/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/022_record_Obsidian/</guid><pubDate>Mon, 02 Jan 2023 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;前言&lt;/strong&gt;：Obsidian 是一款很多大神都在用的笔记软件，具有强大的功能，能够满足日常各种笔记的需求。强大之处在于：Obsidian 能够安装各种强大的插件，实现各种功能。
+废话不多说，玩转 Obsidian 仅需这篇文章足矣，我们直接进入正题。&lt;/p&gt;
+&lt;h2&gt;一、Obsidian 安装&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;安装的方法很简单，直接进入官网：&lt;a href=&quot;https://automeris.io/WebPlotDigitizer.html&quot;&gt;automeris.io&lt;/a&gt;，点击 &lt;code class=&quot;language-text&quot;&gt;Get Obsidian for &gt; windows&lt;/code&gt;  -  &lt;code class=&quot;language-text&quot;&gt;Download for Windows&lt;/code&gt;。下载完 &lt;code class=&quot;language-text&quot;&gt;exe&lt;/code&gt; 程序直接双击即可安装成功。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blog/static/f3313cb2d6b7c45742dff9374ea6735d/d073d/1.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 41.77215189873418%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAAAsTAAALEwEAmpwYAAACAUlEQVR42k2QS08TURSA+xuazqMzpZ1ph7bQwpQp0KFTSnEobUwpE5CgBEHiI2GhBHVhXNAEDYkxbGThY8HChWFpTIwujSsXJm5MdGXCxkTjSn/A58wQH4sv59x7z/lOzo1IksxAfgjTNNFSGqlUKiSZTKLrOoqiEI/HQ2RZDpEk6S99fYmwJkAQBCLBZVCcSCRQVTUkyP8/nzT8Ef6TSWIQZURBQvRzQRBPhKIoEo1GQ2KxWEgwTZLE8E0SZYRYHEXWSSo5NKWIrlpkVBtDdehX6z4Nsuo0kWBqp9PB87wQ13VptVo0m7PMNtusrqxzdmmdM94FyoU2uUSTYW2BEX2VsfQV7PQWTuYWk8YOdWOXSLBuZdxmqj4dMmFXqTlT2BWHWtXlVL2L6yzhtTZpWBextA2c/ps0sneYzT/g9MAh84UjFovPWRp66a/s/0kmr2AMKmhZiXROJlfUKZkV7PIM1mCLEcPDzm9Qy2+HovbAI7ziEcvDr1grveVS+QObo5+5On7sC8U4c6Uea7XHrNgHnHcesmjtk9UqFDMuZno+XK9qbOPm7jNXeMqy+YIN6w2bY++5YX/idvWY3cnv7NV/+UJBZqZwjYXRu3Stnh/36Jg9cqkaw5kOZWOVif4t3Pw+3eIzzpVec3n0Hdftj+xMfuFe4ysH7W886fzgsPuT3xpRD/VZEXj5AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;在这里插入图片描述&quot;
+        title=&quot;&quot;
+        src=&quot;/blog/static/f3313cb2d6b7c45742dff9374ea6735d/f058b/1.png&quot;
+        srcset=&quot;/blog/static/f3313cb2d6b7c45742dff9374ea6735d/c26ae/1.png 158w,
+/blog/static/f3313cb2d6b7c45742dff9374ea6735d/6bdcf/1.png 315w,
+/blog/static/f3313cb2d6b7c45742dff9374ea6735d/f058b/1.png 630w,
+/blog/static/f3313cb2d6b7c45742dff9374ea6735d/40601/1.png 945w,
+/blog/static/f3313cb2d6b7c45742dff9374ea6735d/78612/1.png 1260w,
+/blog/static/f3313cb2d6b7c45742dff9374ea6735d/d073d/1.png 1297w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 403px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blog/static/67d8d86d5a88134c57e13e1311bffb1d/045fd/2.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 135.44303797468356%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAbCAYAAAB836/YAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEmklEQVR42o2UbUxbVRjH+1Up9OW2vbftbe/tvbftbYHSxRcQ5oZDyzoUx+bCXqDA3CYvGhaitCDTichgGTjjFtyLM0HNYmaWZfJNiVGjMX41i5pFvygu8WUJi9koZv4955RbCwOzD/885/V3nnOe5zkmj8cDKq/XC6N9h9xuCG4BbmINCYIAnueZNUT7pkIgXej3+6Fp2pKCUFUFfllEQPGTdoCN0TlFUdieNYEU5vP5EA6HmfSwjmBQJRAZB1tOIdN2gfSDCIWDZF6HrusMXAikWgYMBAIMFgqFyWaNbcx0nMfM5G1MP38b2x44hoDmRThE14SYqJeFV18GlGU5D1SIZ/1t0/ho4h98MPY7jjRfw6HEn3js/gNQNHKTkH53wNxVVJSVxnBm6AfMnPgLF8avYzDxM0abbqBny0WompT3shB4xxsaQFWTEY/UYPrla5idJsCj1zFU/wsm9swjs2OWzYf+D2ikAQOGI+Sd3NgQ6sULdVcx++48vvzwFsaaf8Nk+x84+dyvqFxXBzngY29sAA2ZCvMqIAfIqSSKWhT7Hr6EjvJvMNn1Pc5PXsXwziuY2DuH9w/dwuFnLpO0kZd5uDowoEBWRGx6sAVjrT+iZ+NXSMU/we74RbRXzeDZR2cxPTSPV3suEw+luwGSxCXpEtVj6N91CZnkFeyv+RgHk5+i/8mv0Zv4Auntn+G+ivXwSyILDH2yNYGSJLGElkhlBNUIUjXvIZ38FkdafsLx/XM4lppDU+UIPKKD5GmIJToFulyu1YGiKC4lbJhAfVBlHdXlzUhW9aCz8Swy2z9HdWwbJMXLAkIrpdC7PJDCDEvLT1VpyWnsndwiB8FjJ9bJsoCO0Xlayyuvy4Ara9HIKXoA+zQ8IkSvj7S9+THj8MKrrgmki+12O4qLi1FSUsJkNpthsVhQVGRmbTrGcVzeAUP0ANNqsGQyiYGBAbS2tiKRSCCVSqGxsRG9vb1oampi87SiHA7HMuiawIaGBgwODiKdTmN4eBjj4+Po6+vDyMgIpqam0N3djerqalitVraHggzlgW6BvI3gZXI6eHB2B+w2DlaLHZYSG2k78m1q6Rq6VuBJYFzCf0DDXc5VDLuziFgzON4Mu6uIWQdf2M+NcUKub3MUweq4F5zTSmC8AXSxUzZoXajXX8QmLY2NUhqPyBnUUhtYkpJmfSo6XyunURfsR334JZT5EwzKE6jJxTvhEfzoq/wOh6sWcfypmzi9N4sTuxbwVjuxu4ltW8AbOxZwrnMRpzqyrP/mzgUM197A6Hrg8cgY85R3uZcDX3nob0xsvYl3uhdx+uksznUt4sy+LKZSWZzcs8DGzh7I4u3O3PjIplWA7MokIHWhfjwRPYpkaBQJZRSb1VHUE1uv5rRZW7IF41v017C19HWskxvz72gyosM5LSQoJGFdRPwKuySb0wwrRwORC4jNQZLfdg9sdrLXzrG8zAMF3s3kcYvw+2RSbn7IkgLJL7M+laoEEY2UIaKXojRaDp8oEVtGPhMdkWiEfS6mwqRcrTYNOZ1O9inE43FEIhH2K9HPoqKiArFYjFn6sfwLNwtsbcC1T90AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;在这里插入图片描述&quot;
+        title=&quot;&quot;
+        src=&quot;/blog/static/67d8d86d5a88134c57e13e1311bffb1d/045fd/2.png&quot;
+        srcset=&quot;/blog/static/67d8d86d5a88134c57e13e1311bffb1d/c26ae/2.png 158w,
+/blog/static/67d8d86d5a88134c57e13e1311bffb1d/6bdcf/2.png 315w,
+/blog/static/67d8d86d5a88134c57e13e1311bffb1d/045fd/2.png 403w&quot;
+        sizes=&quot;(max-width: 403px) 100vw, 403px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h2&gt;二、打造属于自己的万能工作台&lt;/h2&gt;
+&lt;p&gt;工作台布局如下所示，由 &lt;strong&gt;七个部分&lt;/strong&gt; 组成：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;==文件区==&lt;/li&gt;
+&lt;li&gt;==历史浏览区==&lt;/li&gt;
+&lt;li&gt;==主笔记区==&lt;/li&gt;
+&lt;li&gt;==关系图谱区==&lt;/li&gt;
+&lt;li&gt;==日历时间区==&lt;/li&gt;
+&lt;li&gt;==备忘录（每日待办）区==&lt;/li&gt;
+&lt;li&gt;==总览大纲区==&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blog/static/bc0676546e006d49fa2132041f79be51/29114/3.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 54.43037974683544%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAACP0lEQVR42l2SW2/TQBCF/StoGt/iu+Pc7fU6tuNcnKRNUNoqKC3wAkJIPPFQif+vw7EhFeLhaHfHnm9mzq6yS1PshMB2MsExTVBNEiypahy3axaOUAxHmEcRquEQdb8PEQTIuV8wZzcYIAv6WIzHWDGmFAwkiUARhiiYZLsD+M4EgTtBFAhEYYpez0FXVeEaBkrbhm6a7d6kln4A34vQY3zoOFCaSjLL2upzVk9SAc9zoGkqNP2PDEOHxmSvAXgePBbvGSbjBraE5K4D4fuoGVcyQmQSo+Q6Y5VVXSOJYwJ1Jph/ZbRAn50t+E9X16CzkE/IaTTCHf+X3K9c9wpMMGfrwnOx3GwwoA0qR7QIaMa6AgOec6sH1XIQRQm6Whcr+henErploc/viiQwlRIL+idpdr3bYUyDG6D7H9Dj+Z4dCo65imiVbeEURDjGbIi568bDBpgQmHMdM0HIDGVRwGaipust7Ap0eX7iiCn/HfEcEzCjfzG7nlp266+yZGcrerCmB4KBar2GlClM03yDvXVIbQjzeIE+L6C9HDuA2/PRUTWE9Fs5TKd4z3d4om/NLdf7PQSfkUVP/pVJBdSBHRZVhe2mRlWWWJZr5POKTfD9TiMoM84eENbc8JSSHHfGIqqm4abTQef2ttW72w6Mmxvs+yHSeYaMT01wEiESSiDmKgcEfjwc8Hw+4zMrvswLfLk848N2h32W4z4v33RXLHAqF/ha3+Hy8IRPj494OT3gfH/E98sFv36+4vXbD/wGjVxQnoPcKKgAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;在这里插入图片描述&quot;
+        title=&quot;&quot;
+        src=&quot;/blog/static/bc0676546e006d49fa2132041f79be51/f058b/3.png&quot;
+        srcset=&quot;/blog/static/bc0676546e006d49fa2132041f79be51/c26ae/3.png 158w,
+/blog/static/bc0676546e006d49fa2132041f79be51/6bdcf/3.png 315w,
+/blog/static/bc0676546e006d49fa2132041f79be51/f058b/3.png 630w,
+/blog/static/bc0676546e006d49fa2132041f79be51/40601/3.png 945w,
+/blog/static/bc0676546e006d49fa2132041f79be51/78612/3.png 1260w,
+/blog/static/bc0676546e006d49fa2132041f79be51/29114/3.png 1920w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h3&gt;1、文件区&lt;/h3&gt;
+&lt;p&gt;只要任意创建一个笔记，左边就可以显示出文件区，这是最基本的，就不再赘述。唯一需要注意的是，可能有同学误关闭了文件区，不知从何处打开，只要点击左上角的文件夹图标。
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 272px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blog/static/1c7ba373ef6fad51680f714bb8b42418/2aae8/4.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 31.0126582278481%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAYAAADDl76dAAAACXBIWXMAAAsTAAALEwEAmpwYAAABFElEQVR42n2Ry2qDYBCFfZK2IF5DE+9G0VaFFNEYdFGwgjRp6C67vj+nZ6RZFNIuPmbmMJd/5le22y1edjvESYJTFOGrbfHZNLhQr7MMIW1MvSgKxHGMiP5/KHmeYxxHPLNgCkO8n88YLxe8csBbXSOjntDvug5pmi5F0vgvFM/zIDjkxIYdxSfywcKK2qPr4prj+/4vewvFMIwlQTdNFJaFnhxIy9h3HGw2G6xWq8Xqur74mqbBYo5t25B68U3mi65IUHM1KXigcP/DHekOB0zThIY3necZVVVhGAZkvK2c4Hg8oixL7Pd79H0PVVWhyFRpKpNMYjC+IkOCIIDHDdbr9RK7PIHDl4uVD5XtJCfkueSF35snxYivE8rcAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;在这里插入图片描述&quot;
+        title=&quot;&quot;
+        src=&quot;/blog/static/1c7ba373ef6fad51680f714bb8b42418/2aae8/4.png&quot;
+        srcset=&quot;/blog/static/1c7ba373ef6fad51680f714bb8b42418/c26ae/4.png 158w,
+/blog/static/1c7ba373ef6fad51680f714bb8b42418/2aae8/4.png 272w&quot;
+        sizes=&quot;(max-width: 272px) 100vw, 272px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h3&gt;2、历史浏览区&lt;/h3&gt;
+&lt;p&gt;历史浏览区可以显示最近关闭的笔记，类似于Windows的快速访问区。当笔记非常多的时候，使用&lt;strong&gt;历史浏览区&lt;/strong&gt;来办公就可以实现事半功倍。
+使用历史浏览区需要安装一个插件 Recent Files。安装步骤如下：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;点击左下角 &lt;code class=&quot;language-text&quot;&gt;设置&lt;/code&gt; 图标 - &lt;code class=&quot;language-text&quot;&gt;第三方插件&lt;/code&gt; - &lt;code class=&quot;language-text&quot;&gt;社区插件市场&lt;/code&gt; - 在搜索栏输入 &lt;code class=&quot;language-text&quot;&gt;Recent Files&lt;/code&gt; - 点击安装即可。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blog/static/104fa5efbcd9a4dbb897727562dbe07d/07a6a/5.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 42.405063291139236%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAAAsTAAALEwEAmpwYAAABVElEQVR42n1Sy0rDQBTNd2iTmSTNPJvETlKTYm0rFroQURFBUHChn+BG3frfx7kjkUKLi8PcgTvnce9ExhgURQEhBKSUSNMUWmtYa8E5R57nyLIMSZLsIY7j0F9WNbRVYClDNO/ncNMGolDQyiD3j4nQORdOAgkeIkyS2It6AzLDVXcHJ6aImtZhUhmkeYK84EFFKU/YOH+q4JCcMsb2wBlH7EnHLMfb5hu9XiC6Wd/ienGPVbXFpbvGVNRQWmI2m/3jbADDKD6CHNd42H5AiRNET8tXvGw+8Xj2juflFy7sGsYIdF0f4g6zHea765DuYb5sBGUzX3NEVW1RCO4jH/vII/A0CVGbpkFZln+xDy2EFko9EzuB0TYIRIvFObrTHuO8gJIaWZoFEloKPSInA8Eu9rf92xf1fY+2bYOLIRZ9GSKk+hAoJgkREdVKSXTtCnXl8ANIM+oRxssSdwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;在这里插入图片描述&quot;
+        title=&quot;&quot;
+        src=&quot;/blog/static/104fa5efbcd9a4dbb897727562dbe07d/f058b/5.png&quot;
+        srcset=&quot;/blog/static/104fa5efbcd9a4dbb897727562dbe07d/c26ae/5.png 158w,
+/blog/static/104fa5efbcd9a4dbb897727562dbe07d/6bdcf/5.png 315w,
+/blog/static/104fa5efbcd9a4dbb897727562dbe07d/f058b/5.png 630w,
+/blog/static/104fa5efbcd9a4dbb897727562dbe07d/40601/5.png 945w,
+/blog/static/104fa5efbcd9a4dbb897727562dbe07d/07a6a/5.png 1095w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blog/static/3ea7942be31e73f3946cb9daf12a64f7/76a99/6.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 27.21518987341772%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAYAAABFA8wzAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA4UlEQVR42nVQy26EMBDjP1oEFAJ5D9kEpH10e6i0l5V66P//izsJSi9VD9YkE9uy0xhrcbneEE4nSKXKtLzTWoOIynmaJgghMM9zmf8h8xoyBvfzjkQrFC/3EKCWBeM4FtLC54wqyKYV9S1DSnkYfkaH70fC8/IF2U8wbYuoDdK+l3Qvry26roNzHiFE9H2PljnDMPwxL4aJRRQjky2EnDndGzbvkLYNSkl4dyRbV8LHeyrifM/G1axWzq2ayAvLhM0IRCOxs+mZNNZAMPyP3h51rdW4X+nXJItrstzEe1/mDw/6lHg49BFUAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;在这里插入图片描述&quot;
+        title=&quot;&quot;
+        src=&quot;/blog/static/3ea7942be31e73f3946cb9daf12a64f7/f058b/6.png&quot;
+        srcset=&quot;/blog/static/3ea7942be31e73f3946cb9daf12a64f7/c26ae/6.png 158w,
+/blog/static/3ea7942be31e73f3946cb9daf12a64f7/6bdcf/6.png 315w,
+/blog/static/3ea7942be31e73f3946cb9daf12a64f7/f058b/6.png 630w,
+/blog/static/3ea7942be31e73f3946cb9daf12a64f7/40601/6.png 945w,
+/blog/static/3ea7942be31e73f3946cb9daf12a64f7/76a99/6.png 1117w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+在左上角菜单栏找到 &lt;code class=&quot;language-text&quot;&gt;时钟&lt;/code&gt; 图标即可打开，布局可参考上图，将其放在 &lt;code class=&quot;language-text&quot;&gt;文件区&lt;/code&gt; 下方。&lt;/p&gt;
+&lt;h3&gt;3、主笔记区&lt;/h3&gt;
+&lt;p&gt;主笔记区是记录笔记的主要区域，在此区域读者可以记录 论文阅读笔记 or 课程学习笔记等等。注意，笔记所使用的是 &lt;code class=&quot;language-text&quot;&gt;Markdown&lt;/code&gt; 语法，大家可以查阅官网的语法说明（&lt;a href=&quot;https://markdown.com.cn/basic-syntax/&quot;&gt;Markdown 基本语法 | Markdown 官方教程&lt;/a&gt;），其实是非常容易上手的、&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blog/static/559c9fc7afdfedcb3bc6b7efa3d483c4/b7877/7.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 74.68354430379746%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsTAAALEwEAmpwYAAACBUlEQVR42o1U2XLaQBDUTyQmBqFrdSKJ1UkQxAgVFFXmyfn/f+nMjIIcp4LJQzOrZdU7PdMjw7IsLBZzzOdziospMkzThO8HCIMAcRwjzzPw+eVyKfEGfnYcB57nweCDZVFCrzXSVYqyLGi9pnWCjAh2u51gTXt8Cb/8L/Dltm3DyLIc59MZp9MJXdfheBxw6M/48TIQ0R6XywXX6xVt2zwk5CwN13WRJIlIWq0ytFWES+/gdVAIfRNfvj5hNnvC8/PzXbIPhPyjPAXP9aReWRqgLjxU2oVSNh3+WKuHhGma4nA4oO97kvaKt7ef2O8PmH2jpnxCcJdQeaE0xVc+dUnJJhfXNBdTt//EZ6SswlBuDJ03JPMFOtsgjmIoXyEgqyRU1ygKCZHsB77/MFPDsb3RMiQ9DENqzErIGGm6koaltJdlmTTuIaFyIhz7AU1TkXFzyYaJlVKTuRk3w/9Hhkqyq6oShS5QFAXquibfbaALTYbWdFlNTvAmcsb9DN0QxbqYbMENGcfIpehKVMqTfcuy5ZlH7O8xvWUvktumJdQiuSpLyrairBoavZymZyu2ajctttsOwzCIAh7FNEsFPG1xMtbXcG2fmjLKbIiY57j73olMXjM2m41cwmXg8dRaY/97xrlZXHNuohBa1ugfljTKsqbIEqevyvL9K/P+vzU1kd3B+AXt7LEuhd8pzwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;在这里插入图片描述&quot;
+        title=&quot;&quot;
+        src=&quot;/blog/static/559c9fc7afdfedcb3bc6b7efa3d483c4/f058b/7.png&quot;
+        srcset=&quot;/blog/static/559c9fc7afdfedcb3bc6b7efa3d483c4/c26ae/7.png 158w,
+/blog/static/559c9fc7afdfedcb3bc6b7efa3d483c4/6bdcf/7.png 315w,
+/blog/static/559c9fc7afdfedcb3bc6b7efa3d483c4/f058b/7.png 630w,
+/blog/static/559c9fc7afdfedcb3bc6b7efa3d483c4/b7877/7.png 891w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h3&gt;4、关系图谱区&lt;/h3&gt;
+&lt;p&gt;关系图谱区只需要点击笔记右上角的 &lt;code class=&quot;language-text&quot;&gt;三个点&lt;/code&gt; - &lt;code class=&quot;language-text&quot;&gt;打开链接视图&lt;/code&gt; - &lt;code class=&quot;language-text&quot;&gt;打开局部关系图&lt;/code&gt;，即可打开关系图谱。具体的关系图谱使用也很简单，只需要使用 &lt;code class=&quot;language-text&quot;&gt;[[x]]&lt;/code&gt; 两个方括号，将要链接的笔记输入其中即可。Obsidian 这个强大的关系图谱功能，能够可视化笔记之间的联系，在大脑中清晰地建立出知识框架。&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;markdown&quot;&gt;&lt;pre class=&quot;language-markdown&quot;&gt;&lt;code class=&quot;language-markdown&quot;&gt;	[[笔记2]]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 448px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blog/static/63b8dc023620391f09c225efee62a984/33b38/8.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 144.30379746835442%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAdCAYAAACqhkzFAAAACXBIWXMAAAsTAAALEwEAmpwYAAADi0lEQVR42pVWyXLaUBDUFySX2IDZsc0iAUZiNfsOhgQHO4mr7LicQ0455Htyy6dOugceIYpdZQ5TT0h6/Xp6ekZYp6en4o+zszNdbduWQqGgazKZlHg8LvFEQqLRqD7P5XKSTqclk8lINpuVNFaLL/FlEwls4D2ufImAXGOxmN5LbAF56MVFUfL5vBTyBVxf6AEWb1SrVen3+zIYDHQdjUYyn8+l1+vpRjIwQARm8DoSiexFWFerVCpJq9WS6XQqi8VCPM/Tk5gmw6REQANmIr67jm8jJhY3kSHByIqMqc/5+bmGAaQMfsDnwuIGx3GkXC5LpVJRdgbIxEGABHBdV9rtturHIuyDHQLId3aAZMeiMOVUKnUwIJ+Hw+ENIEs+Ho81WCDGIYB8FgwGtaAWXzbWIVP1lS/t1wDSRsTQKjcaDZnNZloY+u7QovAZZeI+q1gsSrPZ3Bma9uEBh2poTK+dQmYsiEmVJ5HpoUWh+S3jweFwKN1uV6vNtV6v7wBp9P22+x+MPb4ZHsrw8vJSK8z2W61WKoEZCgSkPi8BxtFyoXBAwpGAXlvcSM2oX61WU8vQSmRl0n0ZEN6LnIhXRGaloV7vGJIdgUjbX2U/IK8ZTPXo+K38uP8lPx9/y7ujN3+rTNvQRzQ5Wb0EyJVScB/1dxxbPLcibqmi9zVlFoJgTN140aT7XMqsJu+Zgbw/oHXaEJTDgakbYDPGngM0Kf+ja3RzX1uPrJgydeR6dXWlMrAVqWsKJ79mdG3Gl00NXBnAe2NUejaZyAKDljaiNykHP0wxFsEfZOsHrOATcId07wHwCIZPYPeA6084gO3YxDMXVR8hkzaiB+G727WHtQW9k5CE8qiGLYycp05H1mD27fpavt/eynv8voauVUjhwZs9ZPEZuk6h8R0OfUC/f10uZQlZltvPJ6XT4WBDoz5AFzD0GJsniDk2jhDa1wgbL05QrAnacQXWXyDJDbK4gUQfQeQDumuCVW2TLxYk73rSACuyKWNTFWANnJ7efqhSSKsItmU873AqgWUP+vYBOoNEpiloN6sGc/ZzNjTJSSOTVTY6ExE8kanwdwWAdQC2kckcTlBGHM7Yn8lmtr7EtEmn8JcC4dBzFNf3L8KYmOOdVuK8XK/X6ll2CjuGTqjVquLYjlihkxMJhIJyjG9CIBSSkC/4raBhTRvS9AQmEBvC88p6r91qy7izlj+B0GHMuw/VdgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;在这里插入图片描述&quot;
+        title=&quot;&quot;
+        src=&quot;/blog/static/63b8dc023620391f09c225efee62a984/33b38/8.png&quot;
+        srcset=&quot;/blog/static/63b8dc023620391f09c225efee62a984/c26ae/8.png 158w,
+/blog/static/63b8dc023620391f09c225efee62a984/6bdcf/8.png 315w,
+/blog/static/63b8dc023620391f09c225efee62a984/33b38/8.png 448w&quot;
+        sizes=&quot;(max-width: 448px) 100vw, 448px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h3&gt;5、日历时间区&lt;/h3&gt;
+&lt;p&gt;日历时间区可以显示日历，并可以在日历上建立每日待办、每日日记、周复盘总结等等。使用日历时间去需要安装插件 Calendar，安装步骤可以参考 &lt;code class=&quot;language-text&quot;&gt;2、历史浏览区&lt;/code&gt; 的安装步骤。
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 338px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blog/static/bb81bef868027463c194783414499330/2b41d/9.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 70.25316455696203%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAAAsTAAALEwEAmpwYAAACTUlEQVR42lVUyXabQBDUX1hiG2DYQQjQYskysaM4jp5zcN7LJdf8/0dUuppgJYd+oxl6qequ1iIMQ/xrQRDABAahCRHHFlEUoWka9MMg1qPIM32z1qrFcayWpqneF0xijIHjOJrM9ZZw/Ts57+D7HjzPR7NucX4cMX4akUtC+rquq+Z5np4swjwLPuR5jqfnJ2y3A9bZM4byO9r8gsgk8ANPgxxnheVyqYFZlqGsarRtOyFLxM/3FdCC1TZdh/cf79jv9zjUP3Fuf+PU/IINc0XJyjQGJBJcFIWAKFBVlYJhUhbltwWdmH2m7AcuAuPK6UiSYOqrnDMl3unP3753KzYzVcpFWaIsC2x3OyQ2Qd8P2Agd0jre30vlFF8uFySCZBxHoZzieDwJsgT7wwE7iVutVlNCVuM0CTuOI7UomqbGynRi0bIoZfqBUg0khu9JYtU3kel+IFSZCA1SCkOjNGdq/MZ3nlaKTvdYT0plVohS/ltEEVI/rJZnuRqdS2k8HYe+QySBlWiRQWuRkH6XO5FlIqP1eq0zuCE0k6hZnYI2gjSKJoQsxsRMMiPjPYonX8ZZG98oTwgTQZaI7mpYU8GmFm23keka2ZJaE+y2W713Xa/I2k2nW5MLk7Ks/u/hvHa6RtrLUMU6I/T9CRlpsafTIIl4EjP9OWWeH1O27IvIhFUpE+5vKC3o+16FfL1e8XB+wOvrN5yOR5HYXiT0iLe3N3x9ecFnkRWLKcJZ3JkMhIn5gbLh24ymqWttfiWanTeE90H+NLiC1CJ3+Q+zApAW5ldYSAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;在这里插入图片描述&quot;
+        title=&quot;&quot;
+        src=&quot;/blog/static/bb81bef868027463c194783414499330/2b41d/9.png&quot;
+        srcset=&quot;/blog/static/bb81bef868027463c194783414499330/c26ae/9.png 158w,
+/blog/static/bb81bef868027463c194783414499330/6bdcf/9.png 315w,
+/blog/static/bb81bef868027463c194783414499330/2b41d/9.png 338w&quot;
+        sizes=&quot;(max-width: 338px) 100vw, 338px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+只需要点击日历上的某一日期，就会出现提示是否创建日记，点击 &lt;code class=&quot;language-text&quot;&gt;Create&lt;/code&gt; 即可创建日记来编写。&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 563px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blog/static/1f9bd965440e29bb3dc39a1df4f6fa37/7cb89/10.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 29.11392405063291%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAYAAADDl76dAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA+klEQVR42pWQvUrEQBSF5wksVDCT3w2E/P8QlAmycQlJWNhit9JCbKzsbcXWN/IJfLFjzkBCLLaw+Lh37r3nzpkRpmnCsqw/sOa6LjzPOwv7M47jwPd9FEUBMY4j2rYF4zAMmq7rtIiL1xfatr3k64WEvbIsIZRSaJpmgWeS5zmSJEGWZYjjGGmaIooiXSN0NLvdbPzJpTtpJocUVlWlhRykbYpZI3VdL5EzzKmhIynNKVq4kVe4vL5AlqcQfJKUcnnenDPOrOuGYeiFfd/jYbfF/d2A96dvfLz8oFUHiDAM8R+CINBfczqesN+P2LUDXh8/8fb8BXW7xS+3eLHQkJZqkQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;在这里插入图片描述&quot;
+        title=&quot;&quot;
+        src=&quot;/blog/static/1f9bd965440e29bb3dc39a1df4f6fa37/7cb89/10.png&quot;
+        srcset=&quot;/blog/static/1f9bd965440e29bb3dc39a1df4f6fa37/c26ae/10.png 158w,
+/blog/static/1f9bd965440e29bb3dc39a1df4f6fa37/6bdcf/10.png 315w,
+/blog/static/1f9bd965440e29bb3dc39a1df4f6fa37/7cb89/10.png 563w&quot;
+        sizes=&quot;(max-width: 563px) 100vw, 563px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h3&gt;6、备忘录区&lt;/h3&gt;
+&lt;p&gt;备忘录区其实就是普通的笔记，将窗口调整为合适大小（笔者置于日历区下，与日历结合着观看能更好地和ddl联系起来），通过一个 markdown 语法就可以实现如下图所示的备忘录功能。&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;markdown&quot;&gt;&lt;pre class=&quot;language-markdown&quot;&gt;&lt;code class=&quot;language-markdown&quot;&gt;&lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; [ ] 学习 OS
+&lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; [ ] 看论文
+&lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; [x] 刷 Leetcode
+&lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; [ ] 整理 obsidian 笔记&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 338px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blog/static/689287ef194dba3d3f9eabd914e05205/2b41d/11.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 77.84810126582278%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAAAsTAAALEwEAmpwYAAACaklEQVR42pVU2WrbQBTVPzRYsrVZi23JWlwpEm4kb8QkoQRM3NZOU+qXGAoJphQK9UPz1OdS+sen906Q0zQhJQ9HI41mzpxzl5GSJEGeZwK+56HZbMKyrHswmwYCP6X/MTyvgyAI0Gq10G63d+h2u+h0OpCYsCgPUJYlfN+HpmkwDGMHVVVRrytouxE67Qh+10MURTtCHhl8iCDUiaDRUAWRpun3yExSG/diRHFECjz6NoWDygWPHrliosqNZNsOHMehyfZuUZNtmiZs20ZRkPpRidFoDJeU6PrdoSwiDEPhjNfyP0nXDciKjL29PciyDEVWoCiMOuo01mo1sq1BbTTukVWo5nhkYRKf8unqGp831zg7m2M2m2G1WuF8scD7iwtMp4fgsJhm8wHZ32AeVioIv3z9ht+/fmK9XmP1cYXvNzfYbrfYbDY4Xy5g6NqTZJVCTpJk0Asng9k5uAGl37YtuK6LMAhpdB5k/ilI/GACthSFkcgao0tloJMy7ZG4/ZeQ1XBAy3KA4XCIvN/HaDyGQ5l7DtmOkMmYlIs7y3OkaYIWfXNcuHyeTWjZJhWtjuPjI5SksCgKeBRPuSZT0TeeR1hXX2C6f4X54AfSvIf9JBUqM+rtfv8VioPibsM/ah9TL6magiw4xTD5gDDyKTEhsixHHMfo9XqIqW+5n29b8xYcCkY1r4tK0SrLJiyHYmWpmL9bYvFmLtptNJ7gcDLB6etTnJwc4fJyjbeLJV0kpTiML4PpdCqSOBgMMKG1fAAR6rAth0rHpUuAVb28LR2qS65N3hjT5ZBlGZI0FXNVzVYuhBN6517+A7YA1eMaMfKzAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;在这里插入图片描述&quot;
+        title=&quot;&quot;
+        src=&quot;/blog/static/689287ef194dba3d3f9eabd914e05205/2b41d/11.png&quot;
+        srcset=&quot;/blog/static/689287ef194dba3d3f9eabd914e05205/c26ae/11.png 158w,
+/blog/static/689287ef194dba3d3f9eabd914e05205/6bdcf/11.png 315w,
+/blog/static/689287ef194dba3d3f9eabd914e05205/2b41d/11.png 338w&quot;
+        sizes=&quot;(max-width: 338px) 100vw, 338px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h3&gt;7、总览大纲区&lt;/h3&gt;
+&lt;p&gt;总览大纲区也是一个普通的笔记，与 &lt;code class=&quot;language-text&quot;&gt;主笔记&lt;/code&gt; 和 &lt;code class=&quot;language-text&quot;&gt;备忘录&lt;/code&gt; 不同之处在于，此处可以用来记录一些总结性、阶段性的进展或者任务要求，能够帮我们有一个整体的结构思维去完成任务，相信大部分人在日常生活、科研学习中也都会有这样的笔记经历，应该能 get 到读者的意思（狗头）。&lt;/p&gt;
+&lt;p&gt;至此，Obsidian 的万能工作台配置已经介绍完毕，希望对大家有所帮助。除此之外，Obsidian 还具有一堆强大的插件，能够实现各式各样的功能，十分自由也十分人性化。欢迎读者在评论区晒出自己的工作台！&lt;/p&gt;</content:encoded></item><item><title><![CDATA[【学习随记】科研神器_WebPlotDigitizer]]></title><description><![CDATA[一、WebPlotDigitizer 安装方法 直接在官网上进行下载 automeris.io，选择右上角的下载按钮，再根据电脑位数选择对应版本进行下载。 
+2. 下载后将得到一个压缩包，直接解压缩，双击即可运行，得到如下界面。
+ 二、WebPlotDigitizer…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/021_record_WebPlotDigitizer/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/021_record_WebPlotDigitizer/</guid><pubDate>Sun, 01 Jan 2023 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;一、WebPlotDigitizer 安装方法&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;直接在官网上进行下载 &lt;a href=&quot;https://automeris.io/WebPlotDigitizer.html&quot;&gt;automeris.io&lt;/a&gt;，选择右上角的下载按钮，再根据电脑位数选择对应版本进行下载。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 204px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blog/static/6c78431c2ff0aebded367717ed10a990/779ef/1.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 31.645569620253163%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAYAAADDl76dAAAACXBIWXMAAAsTAAALEwEAmpwYAAABpUlEQVR42i2Rz0uTcQDGv14koSComOvdO96fyx+5ZLntfTcTFuYqFoFZ2WFS4naYHdLLYGo60baSCIum0EVK6B8oirUlVMjo0LFz4bX/4dP3nR4+8Jw+8DyP0PUoHkYwjnnWwVaTmAGXsOowZsRJBBwSioN7xGXNoU8d5IzvPN3dA238/jCaNtT2CN3wZDGUeD++jMmJUT/H0iqpdA8LqQu8nLbYnrF5k7eoSTZv9FK8Psm9qVmmsgWyklvj97Ftpy0VmjmE5XM5OeNHvBWkPqSZ/HEbZb2D+YIKB4LfnwTvX3fAP0HzRRf1V+/4+avFs2qV/VaLZnOPvv5LBIMXD4WmFJ7KKXTudpJrzDLxOUPo+WmWi2H408XXHYWdioC/x9mraXzc2uX7/je2a1vUvzSo1xtEIqOoauSwshaQyHqRgsvgA7nbwyuM56/yaPomT4oxNh5n2Fzq4emiy1LuGpW5EuW1DVaWK5RKq5TLVaLRsSOhd4qU6nLHkJak1xjmnDVCUh6St2Pc0V2ydoIJfZi7ZoJcyGHEihI0Yxje/hJTZg/vlP+LpeXcMusJcAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;在这里插入图片描述&quot;
+        title=&quot;&quot;
+        src=&quot;/blog/static/6c78431c2ff0aebded367717ed10a990/779ef/1.png&quot;
+        srcset=&quot;/blog/static/6c78431c2ff0aebded367717ed10a990/c26ae/1.png 158w,
+/blog/static/6c78431c2ff0aebded367717ed10a990/779ef/1.png 204w&quot;
+        sizes=&quot;(max-width: 204px) 100vw, 204px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 577px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blog/static/2080cec510dcd344ee3ed2abda783675/065e2/2.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 63.291139240506325%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB80lEQVR42o1Ta3ObMBD0//9t+ZBO27HdlJdBIB4CjMXT4O2eardNM5OEYecOwe3t6sROFxZfjhX2Xo3nfYmjX+PpWw47XCHXtt2w3W7g7fDRtavbEYegwY+wJRp8fzF4PlR/CD9D8oqw7SYcqOoY1PBPLTwiiM+I0w6h6uBFLZ6+arcmqNvp3Ua7zs54iS5QxQCfBaJw/9PgRMKs7KFyS2K+1z0iNqia8X3CZZmhkhBR6GOe5zcfTNOIIPCQqgR9bz+2vK4rEpXD807o7IRxXt0gHgqmaUYYRYgIY2oM/YDeWlwuFxet7dmoZ7SsuQnhDWUzoTkvMBxQ1Qyv7FyvV2SZRpwkiE4RVBwjJsIodDEKuZamCMPQfbtbqaasB0ckAxL8T1iVJTKdQWuNqqpQlgXyvIBhXjBXKkXTNg/LJDQDCqIhmSHxuZud7b8KU6RUoXVOot9IlULKdcmLonCNpGZ3XTfo0t5V0jJjTvLHXi7LQgWJsydKlBARWZbRquQpCmnCZo5wJaGQmbvloup5XCxS/kGaue1HGFoWm1VlnJrSqaJ1PguR2G6au2X5rUrTI2exEDur/2ziTIVyZGTSojDhcE7Mfc+DH/jwfd9FseymLLXzshIb7W1vDuy2bRjH0UHOqcRhGByBwBhD9aXby67r8AuXT+N3Tb4LngAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;在这里插入图片描述&quot;
+        title=&quot;&quot;
+        src=&quot;/blog/static/2080cec510dcd344ee3ed2abda783675/065e2/2.png&quot;
+        srcset=&quot;/blog/static/2080cec510dcd344ee3ed2abda783675/c26ae/2.png 158w,
+/blog/static/2080cec510dcd344ee3ed2abda783675/6bdcf/2.png 315w,
+/blog/static/2080cec510dcd344ee3ed2abda783675/065e2/2.png 577w&quot;
+        sizes=&quot;(max-width: 577px) 100vw, 577px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+2. 下载后将得到一个压缩包，直接解压缩，双击&lt;code class=&quot;language-text&quot;&gt;WebPlotDigitizer-4.7.exe&lt;/code&gt;即可运行，得到如下界面。
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blog/static/7c2f2e8cf3e9425d97e3c4d013a38a45/c1b63/3.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 58.22784810126582%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAAsTAAALEwEAmpwYAAABeElEQVR42o1TXW+DMAzk///EbnurNMSglHyHADef2yBo9zBLp5hgny+O03RdB2MMzGR0naYJOWds24p1XbEsi65ETAkhRo1z3qOUgnmekWSfuF6vaJhcbds2RSV4BQnK/EAtxHiS0vp+QNP3vf6geanKSgx4hRJRUcmiMmBZl/1fFNXk6H56NFVRJWTlv2ylkkXIUkYKo8RR9UNlfipUwmPSkVAOr8GpiIIcYK1Hjg7eCqE3WPXIm5LOz7bdpf8nQmutkBrE4OGjh2UL6AtJDNJ4+eYag5PCBcNtQNu2uA03OOfU3wk3EpoJyVjMkjhbwiGYhBxIFOGd+JFqo/Rzlf5lvdmPy0XFDMNwVsgqew9547xFSSqiqkhC0ON6Ga2kx2Vs+93i6+tTc+/3+zthvaA341zmgk1aMY1pjzte6jiO7z2sY8P5rOCe+hwTWYPEHQuTlMaBPxHWQT2ivpbXvZP4JyFfWcNRqQghKOhzWP8DxlIZ+8en9wsIVqsQgBGrJAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;在这里插入图片描述&quot;
+        title=&quot;&quot;
+        src=&quot;/blog/static/7c2f2e8cf3e9425d97e3c4d013a38a45/f058b/3.png&quot;
+        srcset=&quot;/blog/static/7c2f2e8cf3e9425d97e3c4d013a38a45/c26ae/3.png 158w,
+/blog/static/7c2f2e8cf3e9425d97e3c4d013a38a45/6bdcf/3.png 315w,
+/blog/static/7c2f2e8cf3e9425d97e3c4d013a38a45/f058b/3.png 630w,
+/blog/static/7c2f2e8cf3e9425d97e3c4d013a38a45/40601/3.png 945w,
+/blog/static/7c2f2e8cf3e9425d97e3c4d013a38a45/c1b63/3.png 1200w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h2&gt;二、WebPlotDigitizer 使用方法&lt;/h2&gt;
+&lt;p&gt;本节将以最基本的二维图像为例，展示如何获取图像数据。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;保存提取数据的图像。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;将二维图像保存到本地（以下图为例）。
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blog/static/fbe5974661a084e92f6b5e42cfd4b666/9f82e/4.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 67.08860759493672%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAAsTAAALEwEAmpwYAAACkElEQVR42kWT57LbOAyF/f5vtJOyv7Npk9jXRba61Ysl2ZZVKH0LSrm7nMGQxMEcAuDBZp5n9MqyjLIoaOqauqq4iTXHI7XjcjidMORsWRbB1SOOa7a7BvNywTAMzmJxFOH7Ppt3wkLIhmFgmibUpFBq4hCdcDKfNC9pBbu3LUqHqxaePmGScLYtTuYFLwwIwnAlfHUdgevS5wXTrUKVq0WSWek4ZBeT9GwuuypvzEXJnEpFtrNYYlxoPHnY89gopRjFzPOJ318/sRX7/eWD7B95+/aJ/ffPbP/5yO7rBw4//+bXgknct89rjOA7ifv15S/22x9s9m97hnHAeDvxtjvhJSF2cMUJr1iBh3XVZ5+jdeVgBbjxFVvKc8TswJez4OI7Gia77zs2h8NBSu4JfQt3azO0un8jS+bjuNjMiGePnA+rf8FH9V8MsyIyIryzwcaV3mlneStIfQfz+GB+tUxDh+o7mDry64Pk+uJ+6wjtJ0qwaehl76FvyeMWc+9T5PHaw9frJT8U0z1Scs/EuMxU+Ys6exC5d85n+bgmZnq6IhmFLY9WyZ0mFzzS94jXzSPNivWXdYZxHEvpIps2oEpjHLvFsnuCGIauZKilHZUnCceU9YzjT6JL3aqGrhJs7EiSlI3Wnc4wFA11fS/kQvqwmFtXyO0lq7G+MPbPRQ1jbaEejmDuGvMwBWtEw4o0Tf4n1CpPRKilaCwrbuRFRRoHZJErpWRyL0T8+eLPE/HHvkyXtEi0W5alkKUEQbCWrCekklF7BzKxXEgyCc6kL3meL6OpH9QkSbpiURRLq6KlXZGMnq5yw5+lM9X2LhV91iQXmVdHpuUqejRNc5nnk0yQ9umY+/3O8/mkaRrquuZfW0zOS6EvXnEAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;在这里插入图片描述&quot;
+        title=&quot;&quot;
+        src=&quot;/blog/static/fbe5974661a084e92f6b5e42cfd4b666/f058b/4.png&quot;
+        srcset=&quot;/blog/static/fbe5974661a084e92f6b5e42cfd4b666/c26ae/4.png 158w,
+/blog/static/fbe5974661a084e92f6b5e42cfd4b666/6bdcf/4.png 315w,
+/blog/static/fbe5974661a084e92f6b5e42cfd4b666/f058b/4.png 630w,
+/blog/static/fbe5974661a084e92f6b5e42cfd4b666/9f82e/4.png 820w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+2. 导入图像并配准。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;选择&lt;code class=&quot;language-text&quot;&gt;load iamge&lt;/code&gt;导入保存的图片&lt;/li&gt;
+&lt;li&gt;选择&lt;code class=&quot;language-text&quot;&gt;2D (X-Y) Plot&lt;/code&gt;导入二维图像 - 点击 &lt;code class=&quot;language-text&quot;&gt;Align Axes&lt;/code&gt; 确认。&lt;/li&gt;
+&lt;li&gt;点击 &lt;code class=&quot;language-text&quot;&gt;Proceed&lt;/code&gt; 开始配准，分别在 x轴 和 y轴 上各选两个点&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blog/static/38f6b9fa588ea5f1eb7e06a5ba86eebc/f1d1f/5.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 67.08860759493672%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAAsTAAALEwEAmpwYAAACnklEQVR42kWT65KcRgyF5/2fKOWs97eTje3Yu8PcuDNchjssDAM0fFbjbIWqU6jVKulIfbRb1xX9pWlKWRS0TUNT11RVxfvhQO37HE8nzgLbtonCgDhueXtrscwLl/MZ83IhiWOu1yu7j4SFJJumiWVdUMvCrBRGeCTIQ255zjCOdMMdJeHr3LP2V8Ik4WxZnAR+GEqh+HfC+zAQCZOxqFjqFlU1qLImOh6pPJ/UtMgse4P2rxK3phmF4wlcbheTxg9INUMlTOZ5xjwfeX35zOvfT/z865P8/8T457PgmbcXbT9x+PbMzy9y9/LE6+Z/wvj6vMX8+PIHp/0PdoZhSHszh38N9m8nnOSKGXhYgrPnbLYduuwtn70Z4IhtBT721dvutvtI7g5n9t/37A7HA49+ILFesV4OqEFtBRbNXGaqZsWKwrNnrJP4F4XuSmOLEYhBdIq42iY71/O2lmthFuuXPPVIBdT4YBoHUA+yoJP5DDTFg9jpWeaHFBqZJUbHZtGAtfcoyxs7nex+7wnTgrFPuLk2ogLeiztd/k7sdpzlPLYxyz0gihbcU0ebdfRlTyxn5xhxrzyyvPz9ypNmuL1ygbqH1FmO6zyw7Ik4RZhUzK3L1PosY0pRr3jBgmWNREHDWMvd9BAtZ+wW0Vx3FzZCawojaX9E5YbozGXZEDA3JtOj23SqagvV+azCdu09ls6U8bwzTjOZLMeWcBAdBiLMtCypRZwP40gZJlIxokykFdGeLtjLjLO6o0wDiltAnhcyt2bbqizL/hf2KFvQyMrl0nIqztqx5R+RZnJOc9I8o4okuQg3SW8kt0wSFDLPaINOFH5sCv99mumHyPVM9TmXldP7GwTyGBJsie04ok3T3HyaSNu2dJ2wlu60/QtEYsz97h2x1wAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;在这里插入图片描述&quot;
+        title=&quot;&quot;
+        src=&quot;/blog/static/38f6b9fa588ea5f1eb7e06a5ba86eebc/f058b/5.png&quot;
+        srcset=&quot;/blog/static/38f6b9fa588ea5f1eb7e06a5ba86eebc/c26ae/5.png 158w,
+/blog/static/38f6b9fa588ea5f1eb7e06a5ba86eebc/6bdcf/5.png 315w,
+/blog/static/38f6b9fa588ea5f1eb7e06a5ba86eebc/f058b/5.png 630w,
+/blog/static/38f6b9fa588ea5f1eb7e06a5ba86eebc/f1d1f/5.png 739w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;点击 &lt;code class=&quot;language-text&quot;&gt;Complete!&lt;/code&gt; 输入对应的数值，以完成校正。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blog/static/c06b8b63f37bbdef70483fba06c45e32/c5bb3/6.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 72.15189873417721%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAAAsTAAALEwEAmpwYAAAClklEQVR42mVSXU8aQRTlH7VJtf0r/TWNrbWPfW+CIK4gpgG12qTPTQNIgo1gKm+gBpX9APZjdnaXhdMzA37UTnJy7t65e+beM5OpVKrYzn/GnvGR+ISysYHy9gZ2Cx9RUthSWF/ExC6/d/IfYOTeo5hfh7G5hm2ikH2HovEFmb2v31D//hbO75cYNN9oXNZWYZ2uQHZXIC5eESsPCJeQ3VWE3A/JsvsaUfcFfv5YQ2anWES700I6nUAKG8I3IUNLx1JYiMIlyxFi6TA2GTsIA1VnL8D9JBmjXv+FTD6XQ/v0FHE8RRCEcL0AQSjhC6l5PHFxdT2AaY9xOzQx9nxIGcNjnc96PxDw/AAyiilYRyZHwUajBrVmsxkwnwMiAOIIU9eFc3WJaOTAvRnAuuwhmUwwMoc82MXzVa/XkNnMbqJZa+hEqgSTBLLXw22vj2G/j2g8hrAtHcc8IHE47mCAaDrVh8+XUKtWo+BOycCfbnvRodpgYWqa8PhjQMw4dhIEEKMRZlJizjhlnOL/1Wg0kCkYBXQuznXC9TxOSw/pVWha8IdDCMK/u9Pfwd2QYOz79Jt19E4IQR8D2jVHs9mk4BYF24sOfRZqwTCEYGeeIMsQNxTqX1/DckY6L0KK8HJ8Jch69d+DoGEYODs704Iyivh8prQx4eQL3H/H3FOcxMwrXtYkySNOTk7oYaGAC3aYpqkeQ9Inh97Zjg3HJhOmNYRFXy3LhEl2bJt5W1sUqmk4tvpPe1gqlXDe6Tw+G0Df2uzJDc54mOpg/iSn8exSdIfZbBatVksnIo4Vx7GGHnPJqgvV2UOO0LXRgqOlHfphVyoVHB0d4fj4+B8+PDzE/v6+ZgVVV61WdU7xff7g4EBDxeVyGX8BLbPvOCRCdnQAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;在这里插入图片描述&quot;
+        title=&quot;&quot;
+        src=&quot;/blog/static/c06b8b63f37bbdef70483fba06c45e32/f058b/6.png&quot;
+        srcset=&quot;/blog/static/c06b8b63f37bbdef70483fba06c45e32/c26ae/6.png 158w,
+/blog/static/c06b8b63f37bbdef70483fba06c45e32/6bdcf/6.png 315w,
+/blog/static/c06b8b63f37bbdef70483fba06c45e32/f058b/6.png 630w,
+/blog/static/c06b8b63f37bbdef70483fba06c45e32/c5bb3/6.png 680w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+3. 获取曲线点。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;点击 &lt;code class=&quot;language-text&quot;&gt;Color Foreground Color&lt;/code&gt; 右边的颜色，点击 &lt;code class=&quot;language-text&quot;&gt;Color picker&lt;/code&gt;  从曲线图中取得要提取的曲线对应的颜色（如下图，以橙色线为例）。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blog/static/16bc344bf845654cd540d25a93bcee35/c1b63/7.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 58.22784810126582%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAAsTAAALEwEAmpwYAAACLElEQVR42oVT2W7bMBDU//9GHvMPfSuKNm0O2W5ix7KsgxQlShR1WKfl6ZI5UKAGSmCw4hIczc4unTRNUdc16qqiWEEphdPphHGaMM4zJhPHieJI+daeaV2haRrM7+fDMFjEcQxnPp/xsZZlsYSNuaQK5HGIiDEwziBlgTDM4fkHHHwfiRCW8HK5WFKz8ryAo57vsWQhbS/o+h5VoYB5QVtpsNBDFjPoLMelHzApCeYfEe89pJyj6zpL2nW9FZPJHA5zv0OHO3vQNi32m3swb43odYVg92QR7h4QbB9tzmLv4vj6GwP9BEbh+KbwjfDHT8hHF5HnodQlVg9rJFKAZQJJkYKRx+7G7BNwynPKccGxXT/bUmciNP6Z0ivqg/N0c4OX21vIMCLvWlJ3hBYDFlK8jCOUmFDwjsoesVBjlvkMxRukMUe0usP+2xdERx88ERDkq7MLQ3iM40wetO0JlRJEkkKwFiKZoXONS3eEkjUEnyDiGhWpr6sSgfsLkXtHdwr0Q0+EKZUcRUiJ2Ug24yOpU1NXoCnIdM0xtgm6U4OhjtEqTogxDbWdhjCK4R8DBD7hkFCXJRzrJpGZZbpm5tKYK/McCY9sKZwniOiySAhpRh6Sj0EAud1CH/YIHzd4+erTfJbvhH8to9RgofksSIWUEgWRi1TY/ce8GpSqhC5LaoamKRko1v8SXvvBtW9TVak1vaLxM2+7bJ7SNfQ05P+DschE470mcvP0/gDkq46WNA6B3AAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;在这里插入图片描述&quot;
+        title=&quot;&quot;
+        src=&quot;/blog/static/16bc344bf845654cd540d25a93bcee35/f058b/7.png&quot;
+        srcset=&quot;/blog/static/16bc344bf845654cd540d25a93bcee35/c26ae/7.png 158w,
+/blog/static/16bc344bf845654cd540d25a93bcee35/6bdcf/7.png 315w,
+/blog/static/16bc344bf845654cd540d25a93bcee35/f058b/7.png 630w,
+/blog/static/16bc344bf845654cd540d25a93bcee35/40601/7.png 945w,
+/blog/static/16bc344bf845654cd540d25a93bcee35/c1b63/7.png 1200w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 279px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blog/static/9714d59c3b8152c99524a0d2cc5a91ec/3af37/8.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 104.43037974683544%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAVCAYAAABG1c6oAAAACXBIWXMAAAsTAAALEwEAmpwYAAADmUlEQVR42o2V32uTVxjH44Yt/geug4qKMPBiYze7kTGvVfwHdjO8Fq+FIcjYhVe72xAZlM4NHFtXaKfYtGkdWKjV6voja7Y0aaxN2iZ5k5Pk/ZW8OZ8957xN3IZlPfDkvHnO837P9/n5JrrdLq7rEgQB7XbbSlhewatu4PohYRjgy7605JHPe0SRL/ae6ENr6/s+juPQarkYrIQ5MOJ5LsXtVxT3FOr+JRg/jY5cGk2Pra0s585tMzwMu7sBZlUqDqVSUc62SK+tUSzt2MstoEEulUokpx4yPTfP85k76NEEFO6S3dxj6uEvjIz8xuBgxNWroQV88WKFZDJJKpVi8ckTASxZYomeq2bFbohEGqY+gQcfIU/UakpCUubmTRgYgOVlY92h0+myt7fHzExKXG7GgD2X+0tH8f5yDP2dsNxN4cp9zYaJE5w6pblwwRpas2q1almaPFhAm4R/Au4bml1Pvg+PLuOFWgJft9qxMU1C7rl3L7Yrl6tMT0/LZa2DAF+z1H9+A9+/jbc9j2q1+xddvAgnT2rLWCmHublHrxmaHxNHa6r1vnQtz25bwc/v4s1+St3t2jPRsrqqOXpUc+NG/D8IIolnx5bQmxnus7ROpb/EHx1AlbNWHUVdu1+/DseOwfq62GnPglpAw85kqlar2QLtSc2p4igXVVym9PUghZnPhWVEpVymIQna3KwyNKQ4fz7PxMSExHJbQP3YZeO/odzrlH7HhD4mmo3ZK1RG3iEKHEIpFd8zHrW5fbstCQo5frzBtWuetT/YZRvT2D1/Zwl15wjkvrVhiDpx0m7dwmbcyPBwRL3+v4BxaXiSYDX+Mdz/wF4Sh1ELqx6g5sSJSDJ+KECN1xHAP36Euwn0q1+JeUek03D2LBwR8mfORJKHwzKU7Jl648GH6NlL/zrb3AyYnNyR4m6Ly8EhAd0WypOH/Ki041vSb4v9fqrXqzx+PCUl05Ish4cElNGmGtIWUQv90xDMf9YHNGMsmUxJKbkHDIc3AnqouhPrVr6AHwbRzY394VCxY6w3pC1gsxmPHqMwEoa9OgylM0z2lH1RSpCglqMz/h7hyleY7q6Ud1lYWBDX6zFDwyIu6o4MWqmlmkM2myO/kZMsrvLs2XNyuTyZ9Qx/ZdZ5uviUTGaNTPp3VtfSMrFfUigURJeJPwH/ddMMWKUaMv8aEpeGtGDNfi9UXYmuKWd1HBm4jaYrrJR11YgZX2b9DcAq/4hr6/sYAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;在这里插入图片描述&quot;
+        title=&quot;&quot;
+        src=&quot;/blog/static/9714d59c3b8152c99524a0d2cc5a91ec/3af37/8.png&quot;
+        srcset=&quot;/blog/static/9714d59c3b8152c99524a0d2cc5a91ec/c26ae/8.png 158w,
+/blog/static/9714d59c3b8152c99524a0d2cc5a91ec/3af37/8.png 279w&quot;
+        sizes=&quot;(max-width: 279px) 100vw, 279px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;通过 &lt;code class=&quot;language-text&quot;&gt;Pen&lt;/code&gt; 工具描绘出曲线的大致区域（设置大致的区域可降低 WebPlotDigitizer 误识别率）。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Box： 可以选定需要提取数据的画面范围，可以是一个或者多个方形区域
+Pen： 可以手动绘制需要定位的曲线范围
+Erase： 可以对选定区域进行进一步精准定位，擦掉多余的区域&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blog/static/52240bda52c69436806e4c0014ff8e74/50383/9.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 68.9873417721519%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC2klEQVR42nVUaYvcRhCd/0/+QsCYgAOGmCWEYLLrXbzrBNtrWCeeQaMZXaP7vqXW+fLUG/LNDY8qdVVXV1e90g5cQgh4nocwDBEEAQJKz3EQ6AYs04KqqtB1HZqmwXFsmGYI3fBhGBp1S9p838fpdMJuC9g0DcqyBNYV8zxjoWzKHKn2hDgM5EVFniOOY0zTiMzPEdohLMvEUVFgGgbSNJUX7lYejqIIaZYxEDCME6Z5QV5VOFhneMzY9XwEUYw8L7b7sY4Npr6CeXFgWhdougmHPtsrZYZbsJjRhX5EZ57QE/XpgPzwNyp1j+zwhHT/lfIrWk1Bc1JQqwqK4zeUxz3xjX4H2NuTm6ZFkgT48vQW7z9d4+HzO4n7Tzf488sdPjzecv8GH5/uuHct9Q339PlA+4OUt5Q3OKp/YRdFCcSQM/qPKOMGwzCg7wZ0nUDfC8qBZRBQjiObJWgXaLuePpt98+sxCJbNekTgvMHO9z1kWQvf/Rmm+oipWzAywDCOsp7rMqLIehjHAeZZyKaM0/i/fR6ZQNkjcn4iQw7Y9X2HoqhRVReE3iu4psDCvaVvsYoObdZB/WfCMgcoE3aWgcfm2bYKNqddoLHeVXZF6mTYbTQJSY0kadieP+Da76CeQCrM0M4TzmegqkvM3Q8Y+1/4GkA5jDD1GYZOXRlQZy/5KosBE+yWZSZtQgaMMUwrxu4V+uYGecpOVzZJn7IMLyD6A0RzhVncoW1zlLmOulS49xqjeABLSdo4z7TJSVpJbK5lzrHO18Qt1ul3cu43ys9YFpD0Fb/viCvafyXuiY+0jZin+ZmHI4u7TcLlYsN1XcInkQs4bkmHiHrEcUupu7jYzn82j0ikj+Nm8pxtP5+XkzJNEynQyywrTkiRZyiLTF4UxRHLEUl9yyAINoRyb0Mch3Ikt9FLKOWTv7csy+IPwJC3bzBNU2ax3+9lkIV1aNtW/ly2ROq6xr/q5BQNv5fu1gAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;在这里插入图片描述&quot;
+        title=&quot;&quot;
+        src=&quot;/blog/static/52240bda52c69436806e4c0014ff8e74/f058b/9.png&quot;
+        srcset=&quot;/blog/static/52240bda52c69436806e4c0014ff8e74/c26ae/9.png 158w,
+/blog/static/52240bda52c69436806e4c0014ff8e74/6bdcf/9.png 315w,
+/blog/static/52240bda52c69436806e4c0014ff8e74/f058b/9.png 630w,
+/blog/static/52240bda52c69436806e4c0014ff8e74/50383/9.png 740w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;点击右下角的 &lt;code class=&quot;language-text&quot;&gt;Run&lt;/code&gt; 即可得到曲线对应的点。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blog/static/5ee9bddee407bdf3c21d3e3e8e8b8b78/c67d4/10.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 70.25316455696203%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAAAsTAAALEwEAmpwYAAACvUlEQVR42nVU13LbQAzU/39SJlbsuKVYTrFpkRIpFknHJhaxV232LvFjbgYDEADBxWHBBXj6vofrugjDEL7vI6AW3h6BZcNxHOi6jt1uR7FxOOxhOxFsW8CyTBW3bRue5yGKIizeCyZJIk0Mw4ALdZEEiK2fONEfBAHO57PKGacRiUhwEjG25haGYcAjGAWEeYtxHJGmKavHGMcJTdtRzwhOMdaOpdAejoLJIfI8Vx+79CX6uoBlu+zMI9IdvP0BIXMW8zyjqkpEhobBNdHsDPSOiWq7Rv72GyV1tn5BSvu80VS8MjcUHbn+ouIF3031V0Seg0XbdYjDCPd3S9ytlvj89SM+f/uI+6dPuKM8rG6U/eXHNR6fbxi7Uv7bpyVuv1/hfnWN2xWfH69g6gZbnmaUWYqXD8+o8wZ1LaVDU7fKlrrrWrxqPdKkQ9tKf0t/h6qslT30A7YPG+zfTCJkwrk8Y/v4C87vBNPQqCH1HE7HxMtlQBK3cIwae6fDNA3ox0HFW+ZNQ4c6baAtX3GKOJRpmlA3LVKxx+7JRXAcOPYac9dw5A3OUQNz3dOukYYdDmaDqWk4mAZzW2Fse+jPZMLaQpzEWHS8QzXlE9GFNiyNdLBBfrGNTQ/bnVCc2fp6hS72EacXGOuB3Btg7UboG3agGaiLjNQhQtlelmWKNtKurDfk5FlyTJHFBTpeR71boyFlKtdCnwiUeaW4mIgMhbVFn0coqhoRKaZaLstSoZRnZIHR9zAKiu+iP7gY8wQzY/PAuxVHDDImXGoHUxLyni9oeA1xzE35a8RqhXxfkMRH+ETr0yeZL21BWgkW8uUz/VJL3+GfFkKo1QvD4C+xVatVpVBmlJQrdvpXMOBKyR0V1PLFQIoszOfwXbNVKQoh/nPkVUjU73IkcvkTkD8RTdPUx2WOpJ0cbFEUqu0/Ln4WSOmraJIAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;在这里插入图片描述&quot;
+        title=&quot;&quot;
+        src=&quot;/blog/static/5ee9bddee407bdf3c21d3e3e8e8b8b78/f058b/10.png&quot;
+        srcset=&quot;/blog/static/5ee9bddee407bdf3c21d3e3e8e8b8b78/c26ae/10.png 158w,
+/blog/static/5ee9bddee407bdf3c21d3e3e8e8b8b78/6bdcf/10.png 315w,
+/blog/static/5ee9bddee407bdf3c21d3e3e8e8b8b78/f058b/10.png 630w,
+/blog/static/5ee9bddee407bdf3c21d3e3e8e8b8b78/c67d4/10.png 723w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+4. 调整曲线点。可以通过 &lt;code class=&quot;language-text&quot;&gt;Add Point&lt;/code&gt; 来增加点，通过 &lt;code class=&quot;language-text&quot;&gt;Delete Point&lt;/code&gt;来删除误识别的点，以实现曲线调整。
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 175px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blog/static/e0fc4848f8c42ebab5462e75a71ecd6c/4edbd/11.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 105.69620253164558%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAVCAYAAABG1c6oAAAACXBIWXMAAAsTAAALEwEAmpwYAAADkklEQVR42p2VXUybVRjH31AtZAlbDEm5IAa8GgGpwIU3Gj9CyAw6bjDZiPFqbppNYxxosmR64Z2UbsR4YaKZrpIpySylZUKmHS1SWr6l7IMUaIFRaaHyHSyl7c/3nJbJkjkaT3LyvOfkPb/3/5zzf86rsK8lk0kZ19fX2draoqOjA0VRMBia5XwikeCgpmQCbGkxyPl4PEOgAIm+p2BtbY3NzU0sFosE1tZeIhCQGkl/8/8pbG9PKVSUZkqOwu2JeDr1xwDj8bhUtLq6KruAzc/PsxAM0tp6TQKP6r9F9zS8czqmLokRjcaIxWIPBIgoxqIrMzMzVFdXo9frqayspKKiQj6Xl5dTUFDAc+rY3diI/czXvHtmSd3XHuz2mzgcTpmFaCsrK/T0iHl7ClhVVUVJSYkElZWVUVpaKqNOp+P462/grz/BxLFaTN8E6HMN4XH3Mzw8oiqNSuD29jZut5ve3l4UIXdjY0N+ZX/KQTVlk8lE1hMaLn/4GedPzlD/1jWcji6czt8lwOv14vP5mJqaYnp6Wq5TQqEQS0tLsofDYSKRCEL17OwspqtX5R421GTTdPI0h7Ib0WY/yeHDueTl5ZGfn09hYSFFRUUUFxfLDBVhD6FQKNuzy8LCAouLi/z0Y+pQmk+9AJ3P8HHNB2i0deTrDnHkyFPk5uaSk5ODVqslKysr5YjH2caaNrbx3EUYMfNzYwOvvBTij/FpJu/dYXR0DJfLJQ+ku7tbtVn7AZWSNrbx7HkYn6Dj836ylCg/tPKffswQ+BGMjfBL06Q63qXs2Rh+/8OeFH1nZycz4KVzDTDg5b5lnOf1UXUOLlx4tMqMgC3vq0D3Xegb5m7rBK+Wr6uHAh6PeD/5EPQAYLsEXj57DLreZrdT3bzeIf7qHOXUa2Hq6pJsymJJPrg0MgNePAGul4l7PiXZ1wXOQZKOAa58EuDXG7H02jRw7+p6FNBmtUrgl1+1EPvNjK/+Tf4eu0XSf5+Ec4Bdh4s56x22Qqv/pizKbXl5WVbJXtWIMhLGttlsaDQampqNBK+bGTxeh9fyHXO+Qf68N0vA1seK6sFxazfRuWAKKCpD1LGAivoV0e/3y9jW1oZGrQCDwcCWWkWRIROT37+Iv6uB0HKQzjY/bV94mLthY8feD765VMriphZR3I37UzabzSnbGFP/lPjUFRImhfj1AvWl24QjUFsTxfjeLNGbw3BrgH8AiMpbJzeqMM8AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;调整前&quot;
+        title=&quot;&quot;
+        src=&quot;/blog/static/e0fc4848f8c42ebab5462e75a71ecd6c/4edbd/11.png&quot;
+        srcset=&quot;/blog/static/e0fc4848f8c42ebab5462e75a71ecd6c/c26ae/11.png 158w,
+/blog/static/e0fc4848f8c42ebab5462e75a71ecd6c/4edbd/11.png 175w&quot;
+        sizes=&quot;(max-width: 175px) 100vw, 175px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;    &lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 182px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blog/static/858d6953f254b823bc27b11f3d1d37ac/a51ee/12.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 101.8987341772152%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAADrklEQVR42o2UbUibVxTHg+1MYjJcqx2tq4pVCmMd8+PYPgyG60Bw1K2zdkajo2DHKPu2DfqhH+xGN9iGMEppV5wwGYNtbmtHCwVFXGOCilWTpjGJhsTEVzQvJZqXJ7/d5+pjnbCSAyf3uTecP//zPy86ti2Xy5FOp6Vns1kSiQRzc3PyP6u1BZ3OINzP0aPgcmXFq0Imo8g4zRRFQaf+qOb1emlubqa+vp6GhgZ51tXVcepUIxUVRwTYAQoKZsQJXV2PGB8fZmhomFAoJONTqRSTk5NPAJ1OJ7W1tZSXl1NVVUVlZaX8PnasGrNZZXdIeACDAa5edTE2Nszg4BDhcHgnw4mJCXQa3Uwmw+LiIvPz8ywsLDA7OytYjBOLxWk6874A03HIbMNkdnLzZh8Oh42REbtk5fP5pDxqzA7gXtvc3JTgqrVYrBw+WIjth8/44K2/BfirGI06iosPUFJSQllZmZClgpqamv8CqulrEiSTSYLBoPy2tLfzqaWVtY5GXF9/w4vHrwmgCo4cfp7S0lIBXIzJZEKv1/8/w42NjR2GrR3tfHKmieC5C8T7umiqG+fb75I8TkQIBIJ4PB6mpqaErmPoVDH3ugaoVbDF0kKx+VlCgzYYHefNE3OceAXi8dx2QZ4QyUvDNqsVfcE+/H39YJ/k7Mm4bJ8vLue2pdoFqAbt9Ugkgt/vlynEYjHeO30aw/5nuP99D+u373Lj4gjGwqDQL8zAwDwry/NC761YnTYdu33vpLRYLBj27edRby8M2skJv3XFxQsHE6KlsmQzW3GpVDrPorS2YijU4+85Cbcayd67C/cduHqdvPtGjN9+Zyf1/ABFUQym5/APXIKB86SHr6PYRyXocv8o/d0REjHl6UXZDWgRKRtNZrwPJvG+/Q7ejg9FiYNkHwbIDTlICQmSDq9ayXwZCg2NRjzT06xdv8FK9wVyjvMixyghxyrhX8fAZhNvzvw11OsL8cz4xC2Ocu91cj+K0MifrCXg4sdR/ul2IYb76YBaY28B6pmZ8WyJb++EHh3KyDl5/+MvqCxL0/v57NakqL0WjUZZX1+Xp3Z3u92yHdra2uQCeOhyEk1sEpq+TfSXl1j86WWW3XcIi+3UfPYxBYKeBFxdXZWuNrTq6o5bWlqS86m+d3Z2Ul1dLVbVA7mqXG4PoTsfMffzawQc1/D43GKdxcTG2a6y2sjqPlRdZaSlrG0blWFRUZFcAnIsUwrptSlWei8R+PIyydUV+f7VlRz/AnHDE5vuVrh5AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;调整后&quot;
+        title=&quot;&quot;
+        src=&quot;/blog/static/858d6953f254b823bc27b11f3d1d37ac/a51ee/12.png&quot;
+        srcset=&quot;/blog/static/858d6953f254b823bc27b11f3d1d37ac/c26ae/12.png 158w,
+/blog/static/858d6953f254b823bc27b11f3d1d37ac/a51ee/12.png 182w&quot;
+        sizes=&quot;(max-width: 182px) 100vw, 182px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+5. 导出曲线数据。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;选择左侧 &lt;code class=&quot;language-text&quot;&gt;view data&lt;/code&gt; 查看得到的数据。由于新增的点后添加到数据末尾，因此需要选择Sort by 方式为 &lt;code class=&quot;language-text&quot;&gt;X&lt;/code&gt; 根据x轴来排序。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blog/static/4036e1df55ca7d27a1a822b17bcf52f7/97655/13.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 60.75949367088608%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAAsTAAALEwEAmpwYAAABxUlEQVR42oWS65KaQBCFfbFUaisb9wnywPmx+0dLxTvKShUWCAwgclNRONvdyMZsNslUneqeYuab09105j9/wHz+AvPlAeG4UbLokp4kHubfP+gRavQV8exRvsfTb5Knyy6U1kXHth0URSHKslTi5VLidCpQlmfUdQWgvhMQRSHyPENdVbJvzkDudjzPg+PssF4bEj3Px3y+wIKUZQy90ANXEef7OMYhSRBTTLMM12vzra5vQNM0CbZGr9eTuNlsMBwOMZvNyEV+c1C/RzbguS5s28b5fMbxeES7BGhZFhg6Go2wWq2w3W4ln0wmnwIZoJQP13MRhiGCQJHDyy8gAwzDEIiu6/Iy55qm0eHgD2CRF/JQvN8jjCLJS3KaUBvSNOWh2ALkMjlyyePxWBRS81tQq9b1/eI+ZtTPd6Cur9Dv97FcLmFZTcmDwUDK+eiQL/5tSckuNXi3c8iRBp2AhvEqA5lOpzKAiMoKwwh7KjGOD78N4VMgX+AesBvf9+W3USqA63oIlMLOcST3fU962rr9J7DtQ1XVqCgmhxM5uyJNcpzIUdu/in7k/wLZFZ/h0TO0Ad9029+Lz7Uqy1IGwYPiqJTCGwv8hZX4LH0RAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;在这里插入图片描述&quot;
+        title=&quot;&quot;
+        src=&quot;/blog/static/4036e1df55ca7d27a1a822b17bcf52f7/f058b/13.png&quot;
+        srcset=&quot;/blog/static/4036e1df55ca7d27a1a822b17bcf52f7/c26ae/13.png 158w,
+/blog/static/4036e1df55ca7d27a1a822b17bcf52f7/6bdcf/13.png 315w,
+/blog/static/4036e1df55ca7d27a1a822b17bcf52f7/f058b/13.png 630w,
+/blog/static/4036e1df55ca7d27a1a822b17bcf52f7/97655/13.png 819w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;再点击 &lt;code class=&quot;language-text&quot;&gt;Graph in Plotly*&lt;/code&gt; 查看一下曲线效果&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blog/static/2d40d66f3107704b75a56d69d5f4cc08/ce6cc/14.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 64.55696202531645%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAAsTAAALEwEAmpwYAAABSUlEQVR42qVT207DMAzN//8KHwASz/wCD8ADgnZja3fptjY3Jwc7abZumpDGLB3Zid1jnyRVj+8DYowABLeZIcBRhPUez98RT58B6uHlA/1gsD8M6LWFNg7GemiGGeMpJJ9rHA7aoTeev7d4ax1elwbKe8Km61HXNRaLZfKD1vDcVeCcO8ZSe4o9qHjyPC9B6wGq6y2WzQZf1QzV7AdVPceiWaFZbU5o12jZd7tDUlKwG1Hi9XYP1WwNKATIMRYEXk9BRBmy5oK/oFadTYWCe4zCGWGE4fO5x4zP06uWCUWWZUKK8V9kQmR9VpgIi+SyeavJW/R0QYixS7gypWwNjljJ9ZzILRkmNLkw3VJOXpo08pQbxmu5SaMjYRwnczy6oTCSsKdwlJMvL6QayUudo/MBMuFEZiEWX55CTMjvMxOHce8Ea236a34Bpun+4CFGBgIAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;在这里插入图片描述&quot;
+        title=&quot;&quot;
+        src=&quot;/blog/static/2d40d66f3107704b75a56d69d5f4cc08/f058b/14.png&quot;
+        srcset=&quot;/blog/static/2d40d66f3107704b75a56d69d5f4cc08/c26ae/14.png 158w,
+/blog/static/2d40d66f3107704b75a56d69d5f4cc08/6bdcf/14.png 315w,
+/blog/static/2d40d66f3107704b75a56d69d5f4cc08/f058b/14.png 630w,
+/blog/static/2d40d66f3107704b75a56d69d5f4cc08/40601/14.png 945w,
+/blog/static/2d40d66f3107704b75a56d69d5f4cc08/78612/14.png 1260w,
+/blog/static/2d40d66f3107704b75a56d69d5f4cc08/ce6cc/14.png 1551w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;检查无误后，点击 &lt;code class=&quot;language-text&quot;&gt;Download .CSV&lt;/code&gt; 将曲线数据导出保存。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;至此，WebPlotDigitizer 的使用教程已介绍完毕，希望对大家有所帮助！&lt;/p&gt;</content:encoded></item><item><title><![CDATA[蓝桥杯单片机设计与开发_基础模块_超声波测距]]></title><description><![CDATA[Github代码仓库链接 一、前言 承接上文，本文将介绍最后一个蓝桥杯模块（超声波测距），为大家做出详细编程指导。 二、超声波测距 超声波指的是频率超过人类可听范围（2…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/009 Lanqiaobei/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/009 Lanqiaobei/</guid><pubDate>Wed, 02 Jun 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;https://github.com/Joker001014/LanQiaoCup&quot;&gt;Github代码仓库链接&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;一、前言&lt;/h2&gt;
 &lt;p&gt;承接上文，本文将介绍最后一个蓝桥杯模块（超声波测距），为大家做出详细编程指导。&lt;/p&gt;
 &lt;h2&gt;二、超声波测距&lt;/h2&gt;
