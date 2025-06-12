@@ -53,36 +53,7 @@
 </table>
 <h4>2 寄存器组</h4>
 <p>1、通用寄存器</p>
-<p><span
-      class="gatsby-resp-image-wrapper"
-      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 428px; "
-    >
-      <a
-    class="gatsby-resp-image-link"
-    href="/blog/static/e13f73f1ce62ed2023033f2edf0f2d1c/65a3f/1.jpg"
-    style="display: block"
-    target="_blank"
-    rel="noopener"
-  >
-    <span
-    class="gatsby-resp-image-background-image"
-    style="padding-bottom: 127.21518987341773%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAZABQDASIAAhEBAxEB/8QAGQABAQEAAwAAAAAAAAAAAAAAAAEDAgQF/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/2gAMAwEAAhADEAAAAfLstkCLz0Xrth//xAAYEAACAwAAAAAAAAAAAAAAAAABIAARQf/aAAgBAQABBQK0LYZ//8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAwEBPwEf/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAgEBPwEf/8QAFhABAQEAAAAAAAAAAAAAAAAAMQAw/9oACAEBAAY/Amc//8QAGhABAAIDAQAAAAAAAAAAAAAAAQAREDFBIf/aAAgBAQABPyG3VLpKVxtfW8DWXZHcZxh//9oADAMBAAIAAwAAABDDHjz/xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAEDAQE/EB//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAECAQE/EB//xAAgEAEAAgICAQUAAAAAAAAAAAABABExQSFxUWGRobHh/9oACAEBAAE/EFCqXA7ilioBRr3jSs/Lmc4E1qJfL0x+RKUW6idaxKcFfEyYzqbdz6JkdT//2Q=='); background-size: cover; display: block;"
-  ></span>
-  <img
-        class="gatsby-resp-image-image"
-        alt="在这里插入图片描述"
-        title=""
-        src="/blog/static/e13f73f1ce62ed2023033f2edf0f2d1c/65a3f/1.jpg"
-        srcset="/blog/static/e13f73f1ce62ed2023033f2edf0f2d1c/ff44c/1.jpg 158w,
-/blog/static/e13f73f1ce62ed2023033f2edf0f2d1c/a6688/1.jpg 315w,
-/blog/static/e13f73f1ce62ed2023033f2edf0f2d1c/65a3f/1.jpg 428w"
-        sizes="(max-width: 428px) 100vw, 428px"
-        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
-        loading="lazy"
-        decoding="async"
-      />
-  </a>
-    </span></p>
+<p><img src="./1.jpeg" alt="在这里插入图片描述"></p>
 <ul>
 <li>变量 <code class="language-text">XLEN</code> 指指令集位宽</li>
 <li>整数调用约定提供了 8 个参数寄存器 a0 ~ a7，前两个寄存器也用于保存返回值</li>
@@ -128,37 +99,7 @@
 <h4>3 中断机制</h4>
 <p>1、微观上，我们使用<code class="language-text">异常</code>来表示当前硬件线程中执行代码发生的特殊情况，而<code class="language-text">中断</code>则表示一个外部的异步事件，这个事件可能引起控制转移，通常与当前执行代码无关。宏观上，我们将其统称为中断。</p>
 <p>2、<code class="language-text">mstatus</code> 全局中断使能</p>
-<p><span
-      class="gatsby-resp-image-wrapper"
-      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; "
-    >
-      <a
-    class="gatsby-resp-image-link"
-    href="/blog/static/abfc59070855412dceb532c193191b45/ac4a7/2.jpg"
-    style="display: block"
-    target="_blank"
-    rel="noopener"
-  >
-    <span
-    class="gatsby-resp-image-background-image"
-    style="padding-bottom: 24.050632911392405%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAFABQDASIAAhEBAxEB/8QAFwABAAMAAAAAAAAAAAAAAAAAAAECBf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAdyAuD//xAAUEAEAAAAAAAAAAAAAAAAAAAAQ/9oACAEBAAEFAn//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAUEAEAAAAAAAAAAAAAAAAAAAAQ/9oACAEBAAY/An//xAAXEAEBAQEAAAAAAAAAAAAAAAABEQAQ/9oACAEBAAE/IUjwJv/aAAwDAQACAAMAAAAQc8//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAaEAACAgMAAAAAAAAAAAAAAAAAARExgaHR/9oACAEBAAE/EEs4YRCvR//Z'); background-size: cover; display: block;"
-  ></span>
-  <img
-        class="gatsby-resp-image-image"
-        alt="在这里插入图片描述"
-        title=""
-        src="/blog/static/abfc59070855412dceb532c193191b45/828fb/2.jpg"
-        srcset="/blog/static/abfc59070855412dceb532c193191b45/ff44c/2.jpg 158w,
-/blog/static/abfc59070855412dceb532c193191b45/a6688/2.jpg 315w,
-/blog/static/abfc59070855412dceb532c193191b45/828fb/2.jpg 630w,
-/blog/static/abfc59070855412dceb532c193191b45/ac4a7/2.jpg 896w"
-        sizes="(max-width: 630px) 100vw, 630px"
-        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
-        loading="lazy"
-        decoding="async"
-      />
-  </a>
-    </span></p>
+<p><img src="./2.jpeg" alt="在这里插入图片描述"></p>
 <ul>
 <li>mstatus 寄存器记录了当前硬件线程的状态，由多个状态位组成</li>
 <li>在 S-Mode 下以 sstatus 被访问</li>
@@ -188,72 +129,8 @@
 <li>xPP 字段是 <strong>WARL</strong>（Write any values, read legal values）字段，只能保存<strong>低于或等于 x 的特权模式</strong>，如果系统没有实现 x 模式，xPP 必须被硬连接到 0。</li>
 </ul>
 <p>2、具体类型中断使能
-<span
-      class="gatsby-resp-image-wrapper"
-      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; "
-    >
-      <a
-    class="gatsby-resp-image-link"
-    href="/blog/static/0d492020f192fd8602f128baaa600639/3707e/mip.png"
-    style="display: block"
-    target="_blank"
-    rel="noopener"
-  >
-    <span
-    class="gatsby-resp-image-background-image"
-    style="padding-bottom: 13.924050632911392%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAADCAYAAACTWi8uAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAdElEQVR42l1OSQoEIRDz/3/zDR6UdkFtxO3gIUMKHIYpCFkFldYaIQSklPA8D4wxcM4hxgjvvXQEc3ru6G/H/G5zzlDWWhF7b/TeMecUHmNgrfUFPbvrqZm11oT5hrnCzzEopcjgfV/R5FqrgP6Cnzjn4P8+7dTj+6vz9ZYAAAAASUVORK5CYII='); background-size: cover; display: block;"
-  ></span>
-  <img
-        class="gatsby-resp-image-image"
-        alt="alt text"
-        title=""
-        src="/blog/static/0d492020f192fd8602f128baaa600639/f058b/mip.png"
-        srcset="/blog/static/0d492020f192fd8602f128baaa600639/c26ae/mip.png 158w,
-/blog/static/0d492020f192fd8602f128baaa600639/6bdcf/mip.png 315w,
-/blog/static/0d492020f192fd8602f128baaa600639/f058b/mip.png 630w,
-/blog/static/0d492020f192fd8602f128baaa600639/40601/mip.png 945w,
-/blog/static/0d492020f192fd8602f128baaa600639/78612/mip.png 1260w,
-/blog/static/0d492020f192fd8602f128baaa600639/3707e/mip.png 1878w"
-        sizes="(max-width: 630px) 100vw, 630px"
-        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
-        loading="lazy"
-        decoding="async"
-      />
-  </a>
-    </span>
-<span
-      class="gatsby-resp-image-wrapper"
-      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; "
-    >
-      <a
-    class="gatsby-resp-image-link"
-    href="/blog/static/ff743b14ecb322706db7dee06dc89064/6fa81/mie.png"
-    style="display: block"
-    target="_blank"
-    rel="noopener"
-  >
-    <span
-    class="gatsby-resp-image-background-image"
-    style="padding-bottom: 13.924050632911392%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAADCAYAAACTWi8uAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAd0lEQVR42l2MSwrAIAxEvf/dvIFURKxVK+KvLqckUBcNPCRvJgopJZRSKKXAWstoreG9x3mezHVdcM7hOA72IYSdU98Yw452QUVirYXWGnrvmHPu9+N5nu2oS/sYg29qrZwRAr/JOeO+bw5jjEgpbfdBnhx99J8XinTjO3dj/mcAAAAASUVORK5CYII='); background-size: cover; display: block;"
-  ></span>
-  <img
-        class="gatsby-resp-image-image"
-        alt="alt text"
-        title=""
-        src="/blog/static/ff743b14ecb322706db7dee06dc89064/f058b/mie.png"
-        srcset="/blog/static/ff743b14ecb322706db7dee06dc89064/c26ae/mie.png 158w,
-/blog/static/ff743b14ecb322706db7dee06dc89064/6bdcf/mie.png 315w,
-/blog/static/ff743b14ecb322706db7dee06dc89064/f058b/mie.png 630w,
-/blog/static/ff743b14ecb322706db7dee06dc89064/40601/mie.png 945w,
-/blog/static/ff743b14ecb322706db7dee06dc89064/78612/mie.png 1260w,
-/blog/static/ff743b14ecb322706db7dee06dc89064/6fa81/mie.png 1856w"
-        sizes="(max-width: 630px) 100vw, 630px"
-        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
-        loading="lazy"
-        decoding="async"
-      />
-  </a>
-    </span></p>
+<img src="mip.png" alt="alt text">
+<img src="mie.png" alt="alt text"></p>
 <ul>
 <li><code class="language-text">mip</code> 存储了未决中断（pending interrupts）的相关信息（未决中断是已经发生、但没有被处理的中断）</li>
 <li><code class="language-text">mie</code> 存储了具体类型的中断使能信息（指示特定中断是否被允许发生）</li>
@@ -272,69 +149,11 @@
 <ul>
 <li><code class="language-text">mcause</code>（Machine Cause Register）当控制转移到 M-Mode 中时，寄存器会被自动填入代表中断类型的代码</li>
 </ul>
-<p><span
-      class="gatsby-resp-image-wrapper"
-      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 440px; "
-    >
-      <a
-    class="gatsby-resp-image-link"
-    href="/blog/static/9ad812d8b7f3ac761bfa1e63134ac694/48c0e/3.png"
-    style="display: block"
-    target="_blank"
-    rel="noopener"
-  >
-    <span
-    class="gatsby-resp-image-background-image"
-    style="padding-bottom: 287.34177215189874%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,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'); background-size: cover; display: block;"
-  ></span>
-  <img
-        class="gatsby-resp-image-image"
-        alt="alt text"
-        title=""
-        src="/blog/static/9ad812d8b7f3ac761bfa1e63134ac694/48c0e/3.png"
-        srcset="/blog/static/9ad812d8b7f3ac761bfa1e63134ac694/c26ae/3.png 158w,
-/blog/static/9ad812d8b7f3ac761bfa1e63134ac694/6bdcf/3.png 315w,
-/blog/static/9ad812d8b7f3ac761bfa1e63134ac694/48c0e/3.png 440w"
-        sizes="(max-width: 440px) 100vw, 440px"
-        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
-        loading="lazy"
-        decoding="async"
-      />
-  </a>
-    </span></p>
+<p><img src="3.png" alt="alt text"></p>
 <ul>
 <li>同步异常优先级：下面的优先级表决定了 mcause 展示哪个异常</li>
 </ul>
-<p><span
-      class="gatsby-resp-image-wrapper"
-      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 382px; "
-    >
-      <a
-    class="gatsby-resp-image-link"
-    href="/blog/static/1bae516c6f806eaf653170899b674ab7/77edc/4.png"
-    style="display: block"
-    target="_blank"
-    rel="noopener"
-  >
-    <span
-    class="gatsby-resp-image-background-image"
-    style="padding-bottom: 207.59493670886076%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,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'); background-size: cover; display: block;"
-  ></span>
-  <img
-        class="gatsby-resp-image-image"
-        alt="alt text"
-        title=""
-        src="/blog/static/1bae516c6f806eaf653170899b674ab7/77edc/4.png"
-        srcset="/blog/static/1bae516c6f806eaf653170899b674ab7/c26ae/4.png 158w,
-/blog/static/1bae516c6f806eaf653170899b674ab7/6bdcf/4.png 315w,
-/blog/static/1bae516c6f806eaf653170899b674ab7/77edc/4.png 382w"
-        sizes="(max-width: 382px) 100vw, 382px"
-        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
-        loading="lazy"
-        decoding="async"
-      />
-  </a>
-    </span></p>
+<p><img src="4.png" alt="alt text"></p>
 <ul>
 <li><code class="language-text">mepc</code>（Machine Exception Program Counter） 寄存器会被自动填入被异步中断打断的指令地址或者导致同步异常的指令地址（中断返回地址）</li>
 <li><code class="language-text">mtval</code>（Machine Trap Value）当控制转移到 M-Mode 中时，寄存器会被自动填入 0 或是异常特有的信息，来辅助处理程序处理。
@@ -354,39 +173,7 @@
 </ul>
 <h4>4 内存管理</h4>
 <p>1、<code class="language-text">satp</code>（Supervisor Address Translation and Protection）寄存器，控制了 S-Mode 下的地址翻译和保护。</p>
-<p><span
-      class="gatsby-resp-image-wrapper"
-      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; "
-    >
-      <a
-    class="gatsby-resp-image-link"
-    href="/blog/static/809926f2e27fbc91b741c163c44e245d/ddc6c/satp.png"
-    style="display: block"
-    target="_blank"
-    rel="noopener"
-  >
-    <span
-    class="gatsby-resp-image-background-image"
-    style="padding-bottom: 21.51898734177215%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAYAAACOXx+WAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAkUlEQVR42rWPTQqDMBCFvUPB3rZg/WmMUCj0GjmBbrPPIiaQP0JiRPESnbjoDRz44PHm8YYpiiuGEFIKIQalFGaMfVNK2FqLQgjIGPPmnH+2bevXdT3Ju2VZevAQgJ1z3TRN93/hOI43rXU1z3MHZdVxHDXol/e+3ff9GWOswWtAn0gpc67JOaCFIw9KaXnJtz/Gfm53Ee/GRAAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
-  ></span>
-  <img
-        class="gatsby-resp-image-image"
-        alt="alt text"
-        title=""
-        src="/blog/static/809926f2e27fbc91b741c163c44e245d/f058b/satp.png"
-        srcset="/blog/static/809926f2e27fbc91b741c163c44e245d/c26ae/satp.png 158w,
-/blog/static/809926f2e27fbc91b741c163c44e245d/6bdcf/satp.png 315w,
-/blog/static/809926f2e27fbc91b741c163c44e245d/f058b/satp.png 630w,
-/blog/static/809926f2e27fbc91b741c163c44e245d/40601/satp.png 945w,
-/blog/static/809926f2e27fbc91b741c163c44e245d/78612/satp.png 1260w,
-/blog/static/809926f2e27fbc91b741c163c44e245d/ddc6c/satp.png 1534w"
-        sizes="(max-width: 630px) 100vw, 630px"
-        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
-        loading="lazy"
-        decoding="async"
-      />
-  </a>
-    </span></p>
+<p><img src="satp.png" alt="alt text"></p>
 <ul>
 <li>该寄存器的 PPN 字段（物理页号）保存着根页表的物理页号；</li>
 <li>ASID 字段（地址空间标识符）是可选的，用来降低上下文切换的开销，在实现进程时需要使用该字段；</li>
@@ -427,75 +214,11 @@
 <li>对于 RV32 来说，开启分页的模式只有 Sv32。而 RV64 可以选用 Sv39 和 Sv48</li>
 <li>在 Sv39 中，物理地址有 56 位，而虚拟地址有 64 位。虽然虚拟地址有这么多位，但是其中只有低 39 位有效，第 63 ~ 39 位的值必须等于第 38 位。</li>
 </ul>
-<p><span
-      class="gatsby-resp-image-wrapper"
-      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; "
-    >
-      <a
-    class="gatsby-resp-image-link"
-    href="/blog/static/7cb75d226c79c86f371fd6ba332a6c42/89c09/sv39_pagetable.jpg"
-    style="display: block"
-    target="_blank"
-    rel="noopener"
-  >
-    <span
-    class="gatsby-resp-image-background-image"
-    style="padding-bottom: 96.20253164556962%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAATABQDASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAAAAECAwX/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIQAxAAAAH3FybUOYUH/8QAGBABAAMBAAAAAAAAAAAAAAAAAAEQIRH/2gAIAQEAAQUCY5WXKH//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAEDAQE/AR//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAECAQE/AR//xAAUEAEAAAAAAAAAAAAAAAAAAAAw/9oACAEBAAY/Ah//xAAbEAEAAgIDAAAAAAAAAAAAAAABABEQMSFBcf/aAAgBAQABPyFdjqFIAj5KtzZnvGpP/9oADAMBAAIAAwAAABAjzwD/xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAEDAQE/EB//xAAVEQEBAAAAAAAAAAAAAAAAAAARIP/aAAgBAgEBPxBj/8QAHRAAAgICAwEAAAAAAAAAAAAAAREAIUFREDGRof/aAAgBAQABPxB5AKaMUdh1ZMEIP2ALDX3magG+ftClnM//2Q=='); background-size: cover; display: block;"
-  ></span>
-  <img
-        class="gatsby-resp-image-image"
-        alt="alt text"
-        title=""
-        src="/blog/static/7cb75d226c79c86f371fd6ba332a6c42/828fb/sv39_pagetable.jpg"
-        srcset="/blog/static/7cb75d226c79c86f371fd6ba332a6c42/ff44c/sv39_pagetable.jpg 158w,
-/blog/static/7cb75d226c79c86f371fd6ba332a6c42/a6688/sv39_pagetable.jpg 315w,
-/blog/static/7cb75d226c79c86f371fd6ba332a6c42/828fb/sv39_pagetable.jpg 630w,
-/blog/static/7cb75d226c79c86f371fd6ba332a6c42/0ede0/sv39_pagetable.jpg 945w,
-/blog/static/7cb75d226c79c86f371fd6ba332a6c42/3ac88/sv39_pagetable.jpg 1260w,
-/blog/static/7cb75d226c79c86f371fd6ba332a6c42/89c09/sv39_pagetable.jpg 1530w"
-        sizes="(max-width: 630px) 100vw, 630px"
-        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
-        loading="lazy"
-        decoding="async"
-      />
-  </a>
-    </span></p>
+<p><img src="sv39_pagetable.jpeg" alt="alt text"></p>
 <ul>
 <li>页表项 PTE（Page table entry）</li>
 </ul>
-<p><span
-      class="gatsby-resp-image-wrapper"
-      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; "
-    >
-      <a
-    class="gatsby-resp-image-link"
-    href="/blog/static/279ea7c3ab9797f5a9ebb582a80fae6a/52c1b/PTE.png"
-    style="display: block"
-    target="_blank"
-    rel="noopener"
-  >
-    <span
-    class="gatsby-resp-image-background-image"
-    style="padding-bottom: 15.18987341772152%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAADCAYAAACTWi8uAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAsklEQVR42k2OMQqDQBBF7UKyajAXzBVylrhWIY1gs9UWIojFNltYCiKiuIuIIp7CzA8YMvB5M8znzzgOVRzHrG1bL03ToCxLf11XBiZJEuz7zoQQt23b3KIoroeyLPNB+MA8z5lz1DAM967r3saY57IsnML5PM+htTZCP45j1Pd9SD7eNA0n75e0i4gh6VXX9eMXSOYTLlZVxfAdehDSWnt05AJiVkq5Ukrvn9hN03RG2AdMWY45keMBsgAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
-  ></span>
-  <img
-        class="gatsby-resp-image-image"
-        alt="alt text"
-        title=""
-        src="/blog/static/279ea7c3ab9797f5a9ebb582a80fae6a/f058b/PTE.png"
-        srcset="/blog/static/279ea7c3ab9797f5a9ebb582a80fae6a/c26ae/PTE.png 158w,
-/blog/static/279ea7c3ab9797f5a9ebb582a80fae6a/6bdcf/PTE.png 315w,
-/blog/static/279ea7c3ab9797f5a9ebb582a80fae6a/f058b/PTE.png 630w,
-/blog/static/279ea7c3ab9797f5a9ebb582a80fae6a/40601/PTE.png 945w,
-/blog/static/279ea7c3ab9797f5a9ebb582a80fae6a/78612/PTE.png 1260w,
-/blog/static/279ea7c3ab9797f5a9ebb582a80fae6a/52c1b/PTE.png 2163w"
-        sizes="(max-width: 630px) 100vw, 630px"
-        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
-        loading="lazy"
-        decoding="async"
-      />
-  </a>
-    </span>
+<p><img src="PTE.png" alt="alt text">
 - V 为 Valid，表示这个页表项是否生效。
 - X、W、R 分别是 Execute、Writable 和 Readable，表示这个页表项所代表的物理页是否可执行、可写或可读，如果这三个位都置为 0，表示这个页表项并不是指向最终的物理页，而是指向下一级页表。
 - U 为 User，表示 U-Mode 下的程序是否可以通过该页表项进行地址映射。如果 U 置为 0，那么 U-Mode 下的程序无法使用该页表项。注意，如果 U 置为 1 时，只有 sstatus 寄存器的 SUM 位也置为 1，S-Mode 下的程序才可以访问该页表项，否则访问会出现错误。
@@ -506,7 +229,7 @@
 <ul>
 <li>三级页表和二级页表的每个页表项的 X、W 和 R 位都要置为 0，表示该条页表项指向下一级页表，而非最终的物理页。</li>
 <li>在修改 satp 寄存器后，需要通过执行 <code class="language-text">SFENCE.VMA</code> 指令来刷新相关的地址翻译缓存（如 TLB）中的值以防止出现未定义行为。</li>
-</ul></section><hr/><footer><div class="bio"><div data-gatsby-image-wrapper="" style="width:50px;height:50px" class="gatsby-image-wrapper bio-avatar"><div aria-hidden="true" data-placeholder-image="" style="opacity:1;transition:opacity 500ms linear;background-color:#3888b8;width:50px;height:50px;position:relative"></div><picture><source type="image/avif" data-srcset="/blog/static/7eafef5239110ac833200fd56815a10e/d4bf4/profile-pic.avif 50w,/blog/static/7eafef5239110ac833200fd56815a10e/ee81f/profile-pic.avif 100w" sizes="50px"/><source type="image/webp" data-srcset="/blog/static/7eafef5239110ac833200fd56815a10e/3faea/profile-pic.webp 50w,/blog/static/7eafef5239110ac833200fd56815a10e/6a679/profile-pic.webp 100w" sizes="50px"/><img data-gatsby-image-ssr="" layout="fixed" data-main-image="" style="opacity:0" sizes="50px" decoding="async" loading="lazy" data-src="/blog/static/7eafef5239110ac833200fd56815a10e/d24ee/profile-pic.jpg" data-srcset="/blog/static/7eafef5239110ac833200fd56815a10e/d24ee/profile-pic.jpg 50w,/blog/static/7eafef5239110ac833200fd56815a10e/64618/profile-pic.jpg 100w" alt="Profile picture"/></picture><noscript><picture><source type="image/avif" srcSet="/blog/static/7eafef5239110ac833200fd56815a10e/d4bf4/profile-pic.avif 50w,/blog/static/7eafef5239110ac833200fd56815a10e/ee81f/profile-pic.avif 100w" sizes="50px"/><source type="image/webp" srcSet="/blog/static/7eafef5239110ac833200fd56815a10e/3faea/profile-pic.webp 50w,/blog/static/7eafef5239110ac833200fd56815a10e/6a679/profile-pic.webp 100w" sizes="50px"/><img data-gatsby-image-ssr="" layout="fixed" data-main-image="" style="opacity:0" sizes="50px" decoding="async" loading="lazy" src="/blog/static/7eafef5239110ac833200fd56815a10e/d24ee/profile-pic.jpg" srcSet="/blog/static/7eafef5239110ac833200fd56815a10e/d24ee/profile-pic.jpg 50w,/blog/static/7eafef5239110ac833200fd56815a10e/64618/profile-pic.jpg 100w" alt="Profile picture"/></picture></noscript><script type="module">const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}</script></div><p>Written by <strong>JokerDebug</strong> <!-- -->who works at Southeast University, Nanjing, China<!-- --> <a href="https://github.com/joker001014">You can follow me on Github</a></p></div></footer></article><nav class="blog-post-nav"><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/blog/018_HIT_OS_Lab9/">← <!-- -->【哈工大_操作系统实验】Lab9 proc文件系统的实现</a></li><li><a rel="next" href="/blog/hello-world/">Self-introduction<!-- --> →</a></li></ul></nav></main><footer>© <!-- -->2025<!-- -->, Built with<!-- --> <a href="https://github.com/Joker001014">JokerDebug</a></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/025_Create_OS_pre1/";/*]]>*/</script><!-- slice-start id="_gatsby-scripts-1" -->
+</ul></section><hr/><footer><div class="bio"><div data-gatsby-image-wrapper="" style="width:50px;height:50px" class="gatsby-image-wrapper bio-avatar"><div aria-hidden="true" data-placeholder-image="" style="opacity:1;transition:opacity 500ms linear;background-color:#3888b8;width:50px;height:50px;position:relative"></div><picture><source type="image/avif" data-srcset="/blog/static/7eafef5239110ac833200fd56815a10e/d4bf4/profile-pic.avif 50w,/blog/static/7eafef5239110ac833200fd56815a10e/ee81f/profile-pic.avif 100w" sizes="50px"/><source type="image/webp" data-srcset="/blog/static/7eafef5239110ac833200fd56815a10e/3faea/profile-pic.webp 50w,/blog/static/7eafef5239110ac833200fd56815a10e/6a679/profile-pic.webp 100w" sizes="50px"/><img data-gatsby-image-ssr="" layout="fixed" data-main-image="" style="opacity:0" sizes="50px" decoding="async" loading="lazy" data-src="/blog/static/7eafef5239110ac833200fd56815a10e/d24ee/profile-pic.jpg" data-srcset="/blog/static/7eafef5239110ac833200fd56815a10e/d24ee/profile-pic.jpg 50w,/blog/static/7eafef5239110ac833200fd56815a10e/64618/profile-pic.jpg 100w" alt="Profile picture"/></picture><noscript><picture><source type="image/avif" srcSet="/blog/static/7eafef5239110ac833200fd56815a10e/d4bf4/profile-pic.avif 50w,/blog/static/7eafef5239110ac833200fd56815a10e/ee81f/profile-pic.avif 100w" sizes="50px"/><source type="image/webp" srcSet="/blog/static/7eafef5239110ac833200fd56815a10e/3faea/profile-pic.webp 50w,/blog/static/7eafef5239110ac833200fd56815a10e/6a679/profile-pic.webp 100w" sizes="50px"/><img data-gatsby-image-ssr="" layout="fixed" data-main-image="" style="opacity:0" sizes="50px" decoding="async" loading="lazy" src="/blog/static/7eafef5239110ac833200fd56815a10e/d24ee/profile-pic.jpg" srcSet="/blog/static/7eafef5239110ac833200fd56815a10e/d24ee/profile-pic.jpg 50w,/blog/static/7eafef5239110ac833200fd56815a10e/64618/profile-pic.jpg 100w" alt="Profile picture"/></picture></noscript><script type="module">const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}</script></div><p>Written by <strong>JokerDebug</strong> <!-- -->who works at Southeast University, Nanjing, China<!-- --> <a href="https://github.com/joker001014">You can follow me on Github</a></p></div></footer></article><nav class="blog-post-nav"><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/blog/029_Create_OS_4/">← <!-- -->【Create my OS】0 前置知识</a></li><li><a rel="next" href="/blog/026_Create_OS_1/">【Create my OS】0 前置知识<!-- --> →</a></li></ul></nav></main><footer>© <!-- -->2025<!-- -->, Built with<!-- --> <a href="https://github.com/Joker001014">JokerDebug</a></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/030_Create_OS_5/";/*]]>*/</script><!-- slice-start id="_gatsby-scripts-1" -->
           <script
             id="gatsby-chunk-mapping"
           >
